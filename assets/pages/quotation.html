@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Quotation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .form-section {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .required::after {
+            content: " *";
+            color: red;
+        }
+
+        .form-icon {
+            font-size: 1.2rem;
+            color: #0d6efd;
+            margin-right: 8px;
+        }
+
+        legend {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-banner {
+            background: linear-gradient(150deg, #17046b, #011c6d);
+            color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .header-banner img {
+            max-width: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .bg-soft {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="header-banner">
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Quotation Icon"
+                style="filter: brightness(0) invert(1);" />
+
+            <h1 class="fw-bold">Training Quotation Request</h1>
+            <p class="mb-0">For colleges, institutes, and academic organizations</p>
+        </div>
+
+        <form class="form-section">
+            <!-- Company Information -->
+            <fieldset class="mb-4">
+                <legend><i class="bi bi-building form-icon"></i>Company Information</legend>
+
+                <div class="mb-3">
+                    <label for="collegeName" class="form-label required">Organization Name</label>
+                    <input type="text" class="form-control" id="collegeName" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="personName" class="form-label required">Contact Person Name</label>
+                    <input type="text" class="form-control" id="personName" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="personEmail" class="form-label required">Email</label>
+                    <input type="email" class="form-control" id="personEmail" required>
+                </div>
+
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label required">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" pattern="\d{10}" maxlength="10"
+                    inputmode="numeric" required title="Enter a valid 10-digit phone number">
+            </div>
+            </fieldset>
+
+            <!-- Training Requirement -->
+            <fieldset class="mb-4">
+                <legend><i class="bi bi-laptop form-icon"></i>Training Requirement</legend>
+
+                <div class="mb-3">
+                    <label class="form-label required d-block">Software Required</label>
+                    <div class="d-flex flex-wrap gap-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="software" id="catia" value="CATIA">
+                            <label class="form-check-label" for="catia">CATIA</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="software" id="creo" value="CREO">
+                            <label class="form-check-label" for="creo">CREO</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="software" id="solidworks"
+                                value="SolidWorks">
+                            <label class="form-check-label" for="solidworks">SolidWorks</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="software" id="autocad"
+                                value="AutoCAD">
+                            <label class="form-check-label" for="autocad">AutoCAD</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="software" id="nx"
+                                value="Unigraphics NX">
+                            <label class="form-check-label" for="nx">Unigraphics NX</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="participants" class="form-label required">Number of Participants</label>
+                    <input type="number" class="form-control" id="participants" min="1" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="trainingDate" class="form-label required">Preferred Training Date</label>
+                    <input type="date" class="form-control" id="trainingDate" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="totalHours" class="form-label required">Total Training Hours</label>
+                    <input type="number" class="form-control" id="totalHours" min="1" required>
+                </div>
+            </fieldset>
+
+            <!-- Mode of Training -->
+            <fieldset class="mb-4">
+                <legend><i class="bi bi-camera-video form-icon"></i>Mode of Training</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trainingType" id="online" value="Online" checked
+                        required>
+                    <label class="form-check-label" for="online">Online</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trainingType" id="offline" value="Offline"
+                        required>
+                    <label class="form-check-label" for="offline">Offline</label>
+                </div>
+            </fieldset>
+
+            <!-- Payment and Terms -->
+            <fieldset class="mb-4">
+                <legend><i class="bi bi-wallet2 form-icon"></i>Payment & Terms</legend>
+
+                <label class="form-label required d-block mb-2">Payment Method</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="cash" value="Cash" required>
+                    <label class="form-check-label" for="cash">Cash</label>
+                </div>
+                <div class="form-check form-check-inline mb-3">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="onlinePay" value="Online"
+                        required>
+                    <label class="form-check-label" for="onlinePay">Online (UPI Only)</label>
+                </div>
+
+                <div class="bg-soft border rounded p-3 mb-3">
+                    <strong>Terms and Conditions:</strong>
+                    <ul class="mb-0 mt-2">
+                        <li>Quotation is valid for 7 days from the date of issue.</li>
+                        <li>Training will commence post full payment confirmation.</li>
+                        <li>Certificates issued upon successful course completion.</li>
+                    </ul>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="acceptTerms" required>
+                    <label class="form-check-label" for="acceptTerms">I accept the terms and conditions listed
+                        above.</label>
+                </div>
+            </fieldset>
+
+            <!-- Submit -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5 mt-3">
+                    <i class="bi bi-send-fill me-2"></i>Submit Request
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
