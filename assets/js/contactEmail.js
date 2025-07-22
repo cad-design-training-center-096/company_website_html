@@ -13,17 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Collect form data
     const formData = new FormData(form);
-    const data = {};
+    let data = {};
     formData.forEach((value, key) => data[key] = value);
-
     try {
-      const response = await fetch(backendUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: JSON.stringify(data)
-      });
+        const formData = new URLSearchParams();
+        formData.append('Action', 'email');
+        formData.append('Type', 'contact');
+        formData.append('Data', JSON.stringify(data));
+        const response = await fetch(backendUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+              },
+          body: formData.toString(),
+        });
+
+      console.log('Response:', JSON.stringify(data));
 
       if (!response.ok) throw new Error(`Status ${response.status}`);
 
