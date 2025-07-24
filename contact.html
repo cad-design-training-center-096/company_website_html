@@ -166,7 +166,10 @@
                     <label for="message">Message<span class="text-danger">*</span></label>
                     <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
     
-                    <button type="submit">Send Message</button>
+                <button type="submit" id="submitBtn">
+                    <span id="spinner" class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"></span>
+                    Send Message
+                </button>
                 </form>
                 <div class="mt-3 d-none alert alert-success" id="successMessage">Message sent successfully!</div>
                 <div class="mt-3 d-none alert alert-danger" id="errorMessage">Message sending failed. Please try again

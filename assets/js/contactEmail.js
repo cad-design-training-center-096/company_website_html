@@ -4,12 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const successMsg = document.getElementById('successMessage');
   const errorMsg = document.getElementById('errorMessage');
 
+  const submitBtn = document.getElementById('submitBtn');
+const spinner = document.getElementById('spinner');
+
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     // Hide messages initially
     successMsg.classList.add('d-none');
     errorMsg.classList.add('d-none');
+
+
+    // Inside the submit handler:
+    spinner.classList.remove('d-none'); // Show spinner
+    submitBtn.disabled = true;
+    submitBtn.lastChild.textContent = 'Submitting...'; // Change button text
 
     // Collect form data
     const formData = new FormData(form);
@@ -43,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
       // Show error message
       errorMsg.classList.remove('d-none');
       console.error('Error:', error);
+    }
+    finally {
+      spinner.classList.add('d-none'); // Hide spinner
+      submitBtn.disabled = false;
+      submitBtn.lastChild.textContent = 'Send Message'; // Reset button text
     }
   });
 });
