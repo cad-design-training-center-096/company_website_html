@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> CDTC Official </title>
-
+     
     <!-- ======= Google Font =======-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
     <!-- End Google Font-->
-
+    
     <!-- ======= Styles =======-->
     <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -19,517 +18,220 @@
     <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendors/aos/aos.css" rel="stylesheet">
     <!-- End Styles-->
-
+    
     <!-- ======= Theme Style =======-->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- End Theme Style-->
 
-
-
+  
+    
     <!-- ======= Apply theme =======-->
     <script>
-        // Apply the theme as early as possible to avoid flicker
-        (function () {
-            const storedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-bs-theme', storedTheme);
-        })();
+      // Apply the theme as early as possible to avoid flicker
+      (function() {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+      })();
     </script>
-</head>
-
-<body>
-
-
+  </head>
+  <body>
+    
+    
     <!-- ======= Site Wrap =======-->
     <div class="site-wrap">
+      
+      
+      <!-- ======= Header =======-->
+<header class="fbs__net-navbar navbar navbar-expand-lg fixed-top bg-white shadow-sm" aria-label="freebootstrap.net navbar">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- Start Logo-->
+    <a class="navbar-brand w-auto" href="index.html">
+      <!-- Uncomment to use a text logo -->
+      <!-- Vertex --> 
+      
+      <!-- 
+      <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
+      <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"> 
+      -->
+    </a>
+    <!-- End Logo-->
 
+    <!-- Start offcanvas-->
+    <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+      
+      <div class="offcanvas-header">
+        <div class="offcanvas-header-logo">
+          <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+            <!-- logo dark -->
+            <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
+            <!-- logo light -->
+            <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder">
+          </a>
+        </div>
+        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
-        <!-- ======= Header =======-->
-        <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
-            <div class="container d-flex align-items-center justify-content-between">
+      <div class="offcanvas-body align-items-lg-center">
+        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End offcanvas-->
 
+    <div class="ms-auto w-auto">
+      <div class="header-social d-flex align-items-center gap-1">
+        <a class="btn btn-primary py-2" href="#">Buy Now</a>
+        <a class="btn btn-primary py-2" href="./assets/pages/quotation.html">Quotation</a>
 
-                <!-- Start Logo-->
-                <a class="navbar-brand w-auto" href="index.html">
-                    <!-- If you use a text logo, uncomment this if it is commented-->
-                    <!-- Vertex-->
+        <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+          <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="21" x2="3" y1="6" y2="6"></line>
+            <line x1="15" x2="3" y1="12" y2="12"></line>
+            <line x1="17" x2="3" y1="18" y2="18"></line>
+          </svg>
+          <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Header -->
 
-            <!--        
-                       <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
-                        
-                       <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"> -->
-                <!-- End Logo-->
+      
+      <!-- ======= Main =======-->
+      <main>
+        
+        
+<!-- ======= Hero with Video Background and Top Gradient Overlay ======= -->
+<section id="hero-video" style="position: relative; height: 100vh; overflow: hidden;">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: -1;">
+    <source src="assets/video/clay_4a485c49f2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-                <!-- Start offcanvas-->
-                <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
-                    aria-labelledby="fbs__net-navbarsLabel">
+  <!-- Gradient Overlay: Black and Airbus Blue fade down -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 51, 141, 0.3) 30%, rgba(0, 51, 141, 0) 60%);
+    z-index: 0;">
+  </div>
 
-
-                    <div class="offcanvas-header">
-                        <div class="offcanvas-header-logo">
-
-                            <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
-
-
-                                <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
-                                    alt="FreeBootstrap.net image placeholder">
-
-                                <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg"
-                                    alt="FreeBootstrap.net image placeholder"></a>
-
-                        </div>
-                        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-
-                    <div class="offcanvas-body align-items-lg-center">
-                        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page"
-                                    href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End offcanvas-->
-
-                <div class="ms-auto w-auto">
-
-
-                    <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2"
-                            href="#">Buy Now</a>
-                        <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2"
-                                href="./assets/pages/quotation.html">Quotation</a>
-
-                            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
-                                data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars"
-                                aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
-                                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="21" x2="3" y1="6" y2="6"></line>
-                                    <line x1="15" x2="3" y1="12" y2="12"></line>
-                                    <line x1="17" x2="3" y1="18" y2="18"></line>
-                                </svg>
-                                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 6 6 18"></path>
-                                    <path d="m6 6 12 12"></path>
-                                </svg>
-                            </button>
-
-                        </div>
-
-                    </div>
-                </div>
-        </header>
-
-        <div style="height: 50px;"></div>
-        <!-- End Header-->
-
-        <!-- ======= Main =======-->
-        <main>
+  <!-- Hero Content: Centered horizontally, aligned to bottom -->
+  <div class="container h-100 d-flex flex-column justify-content-end align-items-center text-center text-white" style="position: relative; z-index: 1; padding-bottom: 60px;">
+    <div>
+      <h1 class="display-4 fw-bold mb-4" style="color: #ffffff;">Design Beyond Engineering</h1>
+      <a href="#contact" class="btn btn-light me-2">Get Started</a>
+      <a href="#about" class="btn btn-outline-light">Learn More</a>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
 
     <!-- ===============================================================================================================================================
           COURSES
         =============================================================================================================================================== -->
     
-    <section class="section pricing__v2" id="course">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="row mb-5">
-                    <div class="col-md-6 mx-auto text-center">
-                        <span class="subtitle text-uppercase mb-3 fs-6">Courses</span>
-                        <h2 class="mb-3">Build Future-Ready Design Experts</h2>
-                        <p>4-day CAD training with certification and job support — fast, focused, and industry-aligned.</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <!-- Left Card: Single Software Training -->
-                    <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="p-5 rounded-4 price-table h-100">
-                            <h3>Single Software Training</h3>
-                            <p>Pick any one software (AutoCAD, SolidWorks, CATIA, Creo, or NX).</p>
-                            <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-                            <div><a class="btn" href="#">Course Details</a></div>
-                        </div>
-                    </div>
-    
-                    <!-- Right Card: All Software Combo -->
-                    <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                        <div class="p-5 rounded-4 price-table popular h-100">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">All Software Combo</h3>
-                                    <p>Complete 20-Day Training Program covering all 5 major CAD tools for engineering
-                                        students.</p>
-                                    <div class="price mb-4"><strong class="me-1">₹3,25,000</strong><span> + GST</span></div>
-                                    <div>
-                                        <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                                        <a class="btn btn-white hover-outline mt-3"
-                                            href="./assets/pages/quotation.html">Quotation</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 pricing-features">
-                                    <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                                    <ul class="list-unstyled d-flex flex-column gap-3">
-                                        <li class="d-flex gap-2 align-items-start mb-0">
-                                            <span class="icon rounded-circle position-relative mt-1">
-                                                <i class="bi bi-check"></i>
-                                            </span><span>AutoCAD, NX, SolidWorks, CATIA, Creo</span>
-                                        </li>
-                                        <li class="d-flex gap-2 align-items-start mb-0">
-                                            <span class="icon rounded-circle position-relative mt-1">
-                                                <i class="bi bi-check"></i>
-                                            </span><span>20 Days Hands-on On-campus Training</span>
-                                        </li>
-                                        <li class="d-flex gap-2 align-items-start mb-0">
-                                            <span class="icon rounded-circle position-relative mt-1">
-                                                <i class="bi bi-check"></i>
-                                            </span><span>Certification for Each Software</span>
-                                        </li>
-                                        <li class="d-flex gap-2 align-items-start mb-0">
-                                            <span class="icon rounded-circle position-relative mt-1">
-                                                <i class="bi bi-check"></i>
-                                            </span><span>1:1 Job Mentorship + HR Connect</span>
-                                        </li>
-                                        <li class="d-flex gap-2 align-items-start mb-0">
-                                            <span class="icon rounded-circle position-relative mt-1">
-                                                <i class="bi bi-check"></i>
-                                            </span><span>Institution Direct Billing (No Student Fee Handling)</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Right Card -->
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!-- AUTO CAD -->
-    <section class="section pricing__v2" id="pricing">
-        <div class="container">
-    
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-5 rounded-4 price-table h-100">
-                        <h3>AutoCAD Training</h3>
-                        <p>Foundational 2D & basic 3D design training delivered on-campus by CDTC for engineering and
-                            diploma
-                            students.</p>
-                        <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-                        <div><a class="btn" href="#">Course Details</a></div>
-                    </div>
-                </div>
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-5 rounded-4 price-table popular h-100">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="mb-3">Institution Package</h3>
-                                <p>Comprehensive AutoCAD skill development program including project-based learning,
-                                    certification, and
-                                    job guidance.</p>
-                                <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-                                <div>
-                                    <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                                    <a class="btn btn-white hover-outline mt-3"
-                                        href="./assets/pages/quotation.html">Quotation</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 pricing-features">
-                                <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                                <ul class="list-unstyled d-flex flex-column gap-3">
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>4 Days of On-campus AutoCAD Training</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>CDTC Certification upon Completion</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Resume Help + HR Guidance for Design Jobs</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Institution Direct Billing (No Student Fee Handling)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!-- Solid Works -->
-    
-    <section class="section pricing__v2" id="pricing">
-        <div class="container">
-    
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-5 rounded-4 price-table h-100">
-                        <h3>SolidWorks Training</h3>
-                        <p>Parametric 3D modeling training for mechanical and diploma students with real-world design
-                            applications.</p>
-                        <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-                        <div><a class="btn" href="#">Course Details</a></div>
-                    </div>
-                </div>
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-5 rounded-4 price-table popular h-100">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="mb-3">Institution Package</h3>
-                                <p>Industry-focused SolidWorks training that builds design confidence and prepares students
-                                    for job interviews.</p>
-                                <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-                                <div>
-                                    <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                                    <a class="btn btn-white hover-outline mt-3"
-                                        href="./assets/pages/quotation.html">Quotation</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 pricing-features">
-                                <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                                <ul class="list-unstyled d-flex flex-column gap-3">
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>4 Days of On-campus SolidWorks Training</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>CDTC Certification upon Completion</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Job Guidance and HR Contact Support</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- UNIGRAPHICS NX -->
-    
-    <section class="section pricing__v2" id="pricing-nx">
-        <div class="container">
-    
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-5 rounded-4 price-table h-100">
-                        <h3>NX CAD Training</h3>
-                        <p>Comprehensive training in parametric modeling, assemblies, and drafting for engineering and
-                            diploma
-                            students.</p>
-                        <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-                        <div><a class="btn" href="#">Course Details</a></div>
-                    </div>
-                </div>
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-5 rounded-4 price-table popular h-100">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="mb-3">Institution Package</h3>
-                                <p>Industry-relevant UNIGRAPHICS NX training to prepare students for technical roles in
-                                    design,
-                                    manufacturing, and product development.</p>
-                                <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-                                <div>
-                                    <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                                    <a class="btn btn-white hover-outline mt-3"
-                                        href="./assets/pages/quotation.html">Quotation</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 pricing-features">
-                                <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                                <ul class="list-unstyled d-flex flex-column gap-3">
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>4 Days of On-campus NX CAD Training</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>CDTC Certification upon Completion</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Resume Enhancement & Industry Insights</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CATIA -->
-    
-    <section class="section pricing__v2" id="pricing-catia">
-        <div class="container">
-    
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-5 rounded-4 price-table h-100">
-                        <h3>CATIA Training</h3>
-                        <p>Parametric and surface modeling for mechanical, automotive, and aerospace design students using
-                            industry-grade CATIA tools.</p>
-                        <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-                        <div><a class="btn" href="#">Course Details</a></div>
-                    </div>
-                </div>
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-5 rounded-4 price-table popular h-100">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="mb-3">Institution Package</h3>
-                                <p>Specialized CATIA training aligned with automotive, aerospace, and mechanical industry
-                                    requirements to
-                                    prepare students for professional design roles.</p>
-                                <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-                                <div>
-                                    <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                                    <a class="btn btn-white hover-outline mt-3"
-                                        href="./assets/pages/quotation.html">Quotation</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 pricing-features">
-                                <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                                <ul class="list-unstyled d-flex flex-column gap-3">
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>4 Days of On-campus CATIA Training</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>CDTC Certification upon Completion</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Automotive & Aerospace Modeling Emphasis</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CREO -->
-    
-    <section class="section pricing__v2" id="pricing-creo">
-        <div class="container">
-    
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-5 rounded-4 price-table h-100">
-                        <h3>CREO Training</h3>
-                        <p>Get hands-on training in parametric and assembly modeling using PTC CREO, tailored for mechanical
-                            and
-                            product design students.</p>
-                        <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-                        <div><a class="btn" href="#">Course Details</a></div>
-                    </div>
-                </div>
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-5 rounded-4 price-table popular h-100">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="mb-3">Institution Package</h3>
-                                <p>Practical CREO training that builds solid fundamentals in CAD modeling, simulation, and
-                                    product
-                                    visualization to boost employability in core industries.</p>
-                                <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-                                <div>
-                                    <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                                    <a class="btn btn-white hover-outline mt-3"
-                                        href="./assets/pages/quotation.html">Quotation</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 pricing-features">
-                                <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                                <ul class="list-unstyled d-flex flex-column gap-3">
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>4 Days of On-campus CREO Training</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>CDTC Certification upon Completion</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Real-World Design and Assembly Exercises</span>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-0">
-                                        <span class="icon rounded-circle position-relative mt-1">
-                                            <i class="bi bi-check"></i>
-                                        </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- ======= Courses Compact Section with Background Image ======= -->
+<section class="section bg-light py-5 courses-background" id="course">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="text-uppercase text-primary fw-semibold fs-6">Courses</span>
+      <h2 class="fw-bold">Build Future-Ready Design Experts</h2>
+      <p>On-campus 4-day CAD training with certification & job guidance. Choose from single software or full combo plans.</p>
+    </div>
 
+    <div class="row justify-content-center g-4 text-center">
+
+  <!-- All -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 border-0 shadow-sm p-4">
+          <img src="assets/images/logo/all.png" alt="All" class="mb-3 mx-auto" style="height: 60px; object-fit: contain;">
+          <h5 class="fw-bold">All Courses</h5>
+          <p class="small">CAD Foundation Course | Certificate Included | Job-Ready Skills</p>
+          <p class="text-primary fw-semibold">₹3,25,000 + GST</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Details</a>
+          <a href="#" class="btn btn-outline-primary btn-sm">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- AutoCAD -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 border-0 shadow-sm p-4">
+          <img src="assets/images/logo/autocad.png" alt="AutoCAD" class="mb-3 mx-auto" style="height: 60px; object-fit: contain;">
+          <h5 class="fw-bold">AutoCAD</h5>
+          <p class="small">2D + Basic 3D training | Certification | Job Support</p>
+          <p class="text-primary fw-semibold">₹65,000 + GST</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Details</a>
+          <a href="#" class="btn btn-outline-primary btn-sm">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- SolidWorks -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 border-0 shadow-sm p-4">
+          <img src="assets/images/logo/solidworks.png" alt="SolidWorks" class="mb-3 mx-auto" style="height: 60px; object-fit: contain;">
+          <h5 class="fw-bold">SolidWorks</h5>
+          <p class="small">3D parametric modeling | Real-world design focus</p>
+          <p class="text-primary fw-semibold">₹65,000 + GST</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Details</a>
+          <a href="#" class="btn btn-outline-primary btn-sm">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- CATIA -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 border-0 shadow-sm p-4">
+          <img src="assets/images/logo/catia.png" alt="CATIA" class="mb-3 mx-auto" style="height: 60px; object-fit: contain;">
+          <h5 class="fw-bold">CATIA</h5>
+          <p class="small">Surface modeling | Automotive & Aerospace focus</p>
+          <p class="text-primary fw-semibold">₹65,000 + GST</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Details</a>
+          <a href="#" class="btn btn-outline-primary btn-sm">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- NX CAD -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 border-0 shadow-sm p-4">
+          <img src="assets/images/logo/nx.png" alt="NX CAD" class="mb-3 mx-auto" style="height: 60px; object-fit: contain;">
+          <h5 class="fw-bold">NX CAD</h5>
+          <p class="small">Assemblies | Drafting | Product development | Manufacturing</p>
+          <p class="text-primary fw-semibold">₹65,000 + GST</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Details</a>
+          <a href="#" class="btn btn-outline-primary btn-sm">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- CREO -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 border-0 shadow-sm p-4">
+          <img src="assets/images/logo/creo.png" alt="CREO" class="mb-3 mx-auto" style="height: 60px; object-fit: contain;">
+          <h5 class="fw-bold">CREO</h5>
+          <p class="small">Simulation | Parametric modeling | Product Visualization</p>
+          <p class="text-primary fw-semibold">₹65,000 + GST</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Details</a>
+          <a href="#" class="btn btn-outline-primary btn-sm">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
          
 
