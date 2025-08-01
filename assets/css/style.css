@@ -8,16 +8,16 @@ Buy Pro
 :root,
 [data-bs-theme=light] {
   --bs-body-bg: #ffffff;
-  --bs-body-color: #494B5B;
+  --bs-body-color: #000000;
   --bs-primary: #17046b;
-  --bs-primary-rgb: 33, 92, 92;
+  --bs-primary-rgb: 23, 4, 107;
   --bs-primary-hover: #1e1bd4;
   --bs-primary-hover-rgb: 20, 75, 75;
   --bs-secondary: #CCE8C9;
   --bs-secondary-rgb: 204, 232, 201;
-  --bs-heading-color: #16181B;
-  --inverse-color: #494B5B;
-  --inverse-color-rgb: 73, 75, 91;
+  --bs-heading-color: #000000;
+  --inverse-color: #000000;
+  --inverse-color-rgb: #000000;
   --bs-link-color: var(--bs-primary);
   --nav-bg: #ffffff;
   --nav-color: #fff;
@@ -71,13 +71,14 @@ a:hover {
   text-decoration: none;
 }
 
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--bs-heading-color);
+  color: var(--bs-primary-color);
 }
 
 .container {
@@ -120,6 +121,17 @@ h6 {
   -webkit-box-shadow: 0 1rem 3rem 0 rgba(var(--bs-black-rgb), 0.05) !important;
           box-shadow: 0 1rem 3rem 0 rgba(var(--bs-black-rgb), 0.05) !important;
 }
+
+.timeline-date {
+  min-width: 100px;
+}
+.timeline-content {
+  flex: 1;
+}
+:root {
+  --bs-primary: #17046b; /* Airbus Blue */
+}
+
 
 .list-checked {
   padding: 0;
@@ -211,6 +223,7 @@ h6 {
   background-color: transparent;
   border-color: rgba(var(--inverse-color-rgb), 0.1);
 }
+
 
 
 

@@ -42,1421 +42,630 @@
       
       
       <!-- ======= Header =======-->
-      <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
-        <div class="container d-flex align-items-center justify-content-between">
-          
-          
-          <!-- Start Logo-->
-          <a class="navbar-brand w-auto" href="index.html">
-            <!-- If you use a text logo, uncomment this if it is commented-->
-            <!-- Vertex--> 
-            
-<!--        
-           <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
-            
-           <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"> -->
-            
-            </a>
-          <!-- End Logo-->
-          
-          <!-- Start offcanvas-->
-          <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
-            
-            
-            <div class="offcanvas-header">
-              <div class="offcanvas-header-logo">
-            
-                <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
-                  
-                  
-                  <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
-                  
-                  <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"></a>
-                
-              </div>
-              <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            
-            <div class="offcanvas-body align-items-lg-center">
-              <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a>
-                </li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a>
-                </li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- End offcanvas-->
-          
-          <div class="ms-auto w-auto">
-            
-            
-            <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2" href="#">Buy Now</a>
-            <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2" href="./assets/pages/quotation.html">Quotation</a>
-              
-              <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
-                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="21" x2="3" y1="6" y2="6"></line>
-                  <line x1="15" x2="3" y1="12" y2="12"></line>
-                  <line x1="17" x2="3" y1="18" y2="18"></line>
-                </svg>
-                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 6 6 18"></path>
-                  <path d="m6 6 12 12"></path>
-                </svg>
-              </button>
-              
-            </div>
-            
-          </div>
+<header class="fbs__net-navbar navbar navbar-expand-lg fixed-top bg-white shadow-sm" aria-label="freebootstrap.net navbar">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- Start Logo-->
+    <a class="navbar-brand w-auto" href="index.html">
+      <!-- Uncomment to use a text logo -->
+      <!-- Vertex --> 
+      
+      <!-- 
+      <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
+      <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"> 
+      -->
+    </a>
+    <!-- End Logo-->
+
+    <!-- Start offcanvas-->
+    <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+      
+      <div class="offcanvas-header">
+        <div class="offcanvas-header-logo">
+          <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+            <!-- logo dark -->
+            <!-- <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder">  -->
+            <!-- logo light -->
+            <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder">
+          </a>
         </div>
-      </header>
-      <!-- End Header-->
+        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body align-items-lg-center">
+        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link scroll-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End offcanvas-->
+
+    <div class="ms-auto w-auto">
+      <div class="header-social d-flex align-items-center gap-1">
+        <a class="btn btn-primary py-2" href="#">Buy Now</a>
+        <a class="btn btn-primary py-2" href="./assets/pages/quotation.html">Quotation</a>
+
+        <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+          <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="21" x2="3" y1="6" y2="6"></line>
+            <line x1="15" x2="3" y1="12" y2="12"></line>
+            <line x1="17" x2="3" y1="18" y2="18"></line>
+          </svg>
+          <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Header -->
+
       
       <!-- ======= Main =======-->
       <main>
         
         
-        <!-- ======= Hero =======-->
-        <section class="hero__v6 section" id="home">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="row">
-                  <div class="col-lg-11"><span class="hero-subtitle text-uppercase fs-6" data-aos="fade-up" data-aos-delay="0">Design Beyond Engineering</span>
-                    <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Secure, Efficient, and User-Friendly CAD Design Training</h1>
-                    <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
-                      Unlock the future of design with our comprehensive CAD training — built for security, optimized for efficiency, and designed with the user in mind.</p>
-                    <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300"><a class="btn" href="#">Get Started Now</a><a class="btn btn-white-outline" href="#">Learn More 
-                        <svg class="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M7 7h10v10"></path>
-                          <path d="M7 17 17 7"></path>
-                        </svg></a></div>
-                    <div class="logos mb-4" data-aos="fade-up" data-aos-delay="400"><span class="logos-title text-uppercase mb-4 d-block">Trusted by major colleges in india</span>
-                      <div class="logos-images d-flex gap-4 align-items-center"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1" style="width: 110px;"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2" style="width: 80px;">
-                        <img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3" style="width: 110px;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="hero-img"><img class="img-card img-fluid" src="assets/images/card-expenses.png" alt="Image card" data-aos="fade-down" data-aos-delay="600">
-                  <img class="img-main img-fluid rounded-4" src="assets/images/hero-img-1-min.jpg" alt="Hero Image" data-aos="fade-in" data-aos-delay="500"></div>
-              </div>
-            </div>
-          </div>
-          <!-- End Hero-->
-        </section>
-        <!-- End Hero-->
-        
-        <!-- ======= About =======-->
-      <section class="about__v4 section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 order-md-2">
-              <div class="row justify-content-end">
-                <div class="col-md-11 mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3 fs-6" data-aos="fade-up"
-                    data-aos-delay="0">About us</span>
-                  <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">Advance your design skills with our 4-day intensive
-                    CAD training program</h2>
-                  <div data-aos="fade-up" data-aos-delay="200">
-                    <p>Our institution is proud to offer a focused and practical 4-day Computer-Aided Design (CAD) training
-                      aimed at students and professionals looking to enhance their technical design abilities.</p>
-                    <p>This hands-on training covers industry-standard CAD tools, real-world applications, and efficient
-                      design techniques to prepare participants for modern engineering and architectural challenges.</p>
-                  </div>
-                  <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">Key Highlights of the Program
-                  </h4>
-                  <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features" data-aos="fade-up" data-aos-delay="400">
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Hands-on Training</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Industry-Relevant Tools</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Expert Instructors</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Project-Based Learning</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Certification on Completion</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="img-wrap position-relative"><img class="img-fluid rounded-4" src="assets/images/about_2-min.jpg"
-                  alt="CAD training image" data-aos="fade-up" data-aos-delay="0">
-                <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
-                  <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"></i></div>
-                  <div>
-                    <h3 class="text-uppercase fw-bold">Mission Statement</h3>
-                    <p class="fs-5 mb-0">Our mission is to equip learners with the essential CAD skills needed to thrive in
-                      today’s competitive design and engineering fields.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- ======= Hero with Video Background and Top Gradient Overlay ======= -->
+<section id="hero-video" style="position: relative; height: 100vh; overflow: hidden;">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: -1;">
+    <source src="assets/video/clay_4a485c49f2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-        <!-- End About-->
-        
-        <!-- ======= Features =======-->
-  <section class="section features__v2" id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="d-lg-flex p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
-            <div class="row">
-              <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-                <div class="row">
-                  <div class="col-lg-11">
-                    <div class="h-100 flex-column justify-content-between d-flex">
-                      <div>
-                        <h2 class="mb-4">Why Choose Us</h2>
-                        <p class="mb-5">Join our 4-day CAD training to gain hands-on experience with industry-standard
-                          design tools. Our expert-led sessions help you build practical skills and improve your
-                          proficiency in computer-aided design, preparing you for real-world engineering and architectural
-                          projects.</p>
-                      </div>
-                      <div class="align-self-start"><a
-                          class="glightbox btn btn-play d-inline-flex align-items-center gap-2"
-                          href="https://www.youtube.com/watch?v=DQx96G4yHd8" data-gallery="video"><i
-                            class="bi bi-play-fill"></i> Watch the Video</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="row justify-content-end">
-                  <div class="col-lg-11">
-                    <div class="row">
-                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon text-center mb-4"><i class="bi bi-person-check fs-4"></i></div>
-                        <h3 class="fs-6 fw-bold mb-3">Beginner-Friendly Approach</h3>
-                        <p>Structured for all levels, from beginners to intermediate learners.</p>
-                      </div>
-                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon text-center mb-4"><i class="bi bi-graph-up fs-4"></i></div>
-                        <h3 class="fs-6 fw-bold mb-3">Career-Oriented Skills</h3>
-                        <p>Develop design skills relevant to engineering, architecture, and product design.</p>
-                      </div>
-                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon text-center mb-4"><i class="bi bi-headset fs-4"></i></div>
-                        <h3 class="fs-6 fw-bold mb-3">Expert Guidance</h3>
-                        <p>Trainers with industry experience offering personalized support throughout.</p>
-                      </div>
-                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon text-center mb-4"><i class="bi bi-shield-lock fs-4"></i></div>
-                        <h3 class="fs-6 fw-bold mb-3">Practical Projects</h3>
-                        <p>Apply your learning through real-world CAD exercises and design tasks.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Gradient Overlay: Black and Airbus Blue fade down -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 51, 141, 0.3) 30%, rgba(0, 51, 141, 0) 60%);
+    z-index: 0;">
+  </div>
+
+  <!-- Hero Content: Centered horizontally, aligned to bottom -->
+  <div class="container h-100 d-flex flex-column justify-content-end align-items-center text-center text-white" style="position: relative; z-index: 1; padding-bottom: 60px;">
+    <div>
+      <h1 class="display-4 fw-bold mb-4" style="color: #ffffff;">Design Beyond Engineering</h1>
+      <a href="#contact" class="btn btn-light me-2">Get Started</a>
+      <a href="#about" class="btn btn-outline-light">Learn More</a>
     </div>
-  </section>
+  </div>
+</section>
+<!-- End Hero -->
 
-    <!-- ===============================================================================================================================================
-      COURSES
-    =============================================================================================================================================== -->
-
-  <section class="section pricing__v2" id="course">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="row mb-5">
-          <div class="col-md-6 mx-auto text-center">
-            <span class="subtitle text-uppercase mb-3 fs-6">Courses</span>
-            <h2 class="mb-3">Build Future-Ready Design Experts</h2>
-            <p>4-day CAD training with certification and job support — fast, focused, and industry-aligned.</p>
-          </div>
-        </div>
-  
-        <div class="row">
-          <!-- Left Card: Single Software Training -->
-          <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="p-5 rounded-4 price-table h-100">
-              <h3>Single Software Training</h3>
-              <p>Pick any one software (AutoCAD, SolidWorks, CATIA, Creo, or NX).</p>
-              <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-              <div><a class="btn" href="#">Course Details</a></div>
-            </div>
-          </div>
-  
-          <!-- Right Card: All Software Combo -->
-          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-            <div class="p-5 rounded-4 price-table popular h-100">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3 class="mb-3">All Software Combo</h3>
-                  <p>Complete 20-Day Training Program covering all 5 major CAD tools for engineering students.</p>
-                  <div class="price mb-4"><strong class="me-1">₹3,25,000</strong><span> + GST</span></div>
-                  <div>
-                    <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                    <a class="btn btn-white hover-outline mt-3" href="./assets/pages/quotation.html">Quotation</a>
-                  </div>
-                </div>
-                <div class="col-md-6 pricing-features">
-                  <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                  <ul class="list-unstyled d-flex flex-column gap-3">
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>AutoCAD, NX, SolidWorks, CATIA, Creo</span>
-                    </li>
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>20 Days Hands-on On-campus Training</span>
-                    </li>
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>Certification for Each Software</span>
-                    </li>
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>1:1 Job Mentorship + HR Connect</span>
-                    </li>
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>Institution Direct Billing (No Student Fee Handling)</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End of Right Card -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-         <!-- AUTO CAD -->
-    <section class="section pricing__v2" id="pricing">
-      <div class="container">
+        
+<!-- ======= About & Journey Timeline Section ======= -->
+<section class="about__v4 section bg-white py-5" id="about">
+  <div class="container">
+    <div class="row align-items-center">
       
-        <div class="row">
-          <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="p-5 rounded-4 price-table h-100">
-              <h3>AutoCAD Training</h3>
-              <p>Foundational 2D & basic 3D design training delivered on-campus by CDTC for engineering and diploma
-                students.</p>
-              <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-              <div><a class="btn" href="#">Course Details</a></div>
-            </div>
-          </div>
-          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-            <div class="p-5 rounded-4 price-table popular h-100">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3 class="mb-3">Institution Package</h3>
-                  <p>Comprehensive AutoCAD skill development program including project-based learning, certification, and
-                    job guidance.</p>
-                  <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-                  <div>
-                      <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                      <a class="btn btn-white hover-outline mt-3" href="./assets/pages/quotation.html">Quotation</a>
-                  </div>
-                </div>
-                <div class="col-md-6 pricing-features">
-                  <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                  <ul class="list-unstyled d-flex flex-column gap-3">
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>4 Days of On-campus AutoCAD Training</span>
-                    </li>
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>CDTC Certification upon Completion</span>
-                    </li>
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>Resume Help + HR Guidance for Design Jobs</span>
-                    </li>
-                    <li class="d-flex gap-2 align-items-start mb-0">
-                      <span class="icon rounded-circle position-relative mt-1">
-                        <i class="bi bi-check"></i>
-                      </span><span>Institution Direct Billing (No Student Fee Handling)</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Solid Works -->
-
-     <section class="section pricing__v2" id="pricing">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-5 rounded-4 price-table h-100">
-          <h3>SolidWorks Training</h3>
-          <p>Parametric 3D modeling training for mechanical and diploma students with real-world design applications.</p>
-          <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-          <div><a class="btn" href="#">Course Details</a></div>
-        </div>
-      </div>
-      <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="p-5 rounded-4 price-table popular h-100">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="mb-3">Institution Package</h3>
-              <p>Industry-focused SolidWorks training that builds design confidence and prepares students for job interviews.</p>
-              <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
+      <!-- Left: Image + Mission/Vision -->
+      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+        <div class="img-wrap position-relative">
+          <img src="assets/images/videoframe_4240.png" alt="CAD Training" class="img-fluid rounded-4 shadow-sm">
+          
+          <!-- Mission and Vision -->
+          <div class="d-flex flex-column gap-3 mt-4">
+            <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light border-start border-4 border-primary">
+              <i class="bi bi-bullseye fs-4 text-primary"></i>
               <div>
-                  <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                  <a class="btn btn-white hover-outline mt-3" href="./assets/pages/quotation.html">Quotation</a>
+                <h5 class="fw-bold text-uppercase mb-1">Our Mission</h5>
+                <p class="mb-0 small">Empowering students with industry-standard CAD skills through focused, practical training.</p>
               </div>
             </div>
-            <div class="col-md-6 pricing-features">
-              <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>4 Days of On-campus SolidWorks Training</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>CDTC Certification upon Completion</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Job Guidance and HR Contact Support</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                </li>
-              </ul>
+            <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light border-start border-4 border-primary">
+              <i class="bi bi-eye fs-4 text-primary"></i>
+              <div>
+                <h5 class="fw-bold text-uppercase mb-1">Our Vision</h5>
+                <p class="mb-0 small">To become the most trusted name in CAD training across technical institutions nationwide.</p>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Right: About Content -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="text-uppercase text-primary fw-semibold fs-6 mb-2 d-block">About Us</span>
+        <h2 class="fw-bold mb-4">Master 5 CAD Tools in Just <span class="text-primary editable">4 Days</span></h2>
+        <p class="mb-3">We offer a structured and intensive CAD training program tailored for engineering and diploma students, with practical exposure to top CAD platforms used across the industry.</p>
+        
+        <div class="row gy-3">
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i>
+            <span>AutoCAD</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i>
+            <span>SolidWorks</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i>
+            <span>CATIA</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i>
+            <span>Siemens NX</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i>
+            <span>Creo Parametric</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-award-fill text-primary"></i>
+            <span>Certified Course with Job Assistance</span>
+          </div>
+        </div>
+        
+        <div class="mt-4">
+          <p class="small text-muted">* The training timeline, i.e. <span class="text-primary fw-bold editable">4 Days</span>, is customizable for institutions. Contact us for customized sessions.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- UNIGRAPHICS NX -->
-
-<section class="section pricing__v2" id="pricing-nx">
+<!-- ======= Timeline Section ======= -->
+<section class="section bg-light py-5" id="timeline">
   <div class="container">
+    <!-- Section Heading -->
+    <div class="text-center mb-4">
+      <span class="text-uppercase text-primary fw-semibold fs-6">Our Journey</span>
+      <h2 class="fw-bold mb-3">From Vision to Reality</h2>
+    </div>
+  </div>
 
-    <div class="row">
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-5 rounded-4 price-table h-100">
-          <h3>NX CAD Training</h3>
-          <p>Comprehensive training in parametric modeling, assemblies, and drafting for engineering and diploma
-            students.</p>
-          <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-          <div><a class="btn" href="#">Course Details</a></div>
-        </div>
-      </div>
-      <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="p-5 rounded-4 price-table popular h-100">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="mb-3">Institution Package</h3>
-              <p>Industry-relevant UNIGRAPHICS NX training to prepare students for technical roles in design,
-                manufacturing, and product development.</p>
-              <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-              <div>
-                  <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                  <a class="btn btn-white hover-outline mt-3"href="./assets/pages/quotation.html">Quotation</a>
-              </div>
-            </div>
-            <div class="col-md-6 pricing-features">
-              <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>4 Days of On-campus NX CAD Training</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>CDTC Certification upon Completion</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Resume Enhancement & Industry Insights</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Full-width black background with image -->
+  <div class="black-background-wrapper">
+    <div class="image-inner">
+      <img src="assets/images/_- visual selection.png" alt="Our Journey Visual" class="img-fluid rounded">
     </div>
   </div>
 </section>
 
-<!-- CATIA -->
-
-<section class="section pricing__v2" id="pricing-catia">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-5 rounded-4 price-table h-100">
-          <h3>CATIA Training</h3>
-          <p>Parametric and surface modeling for mechanical, automotive, and aerospace design students using
-            industry-grade CATIA tools.</p>
-          <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-          <div><a class="btn" href="#">Course Details</a></div>
-        </div>
-      </div>
-      <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="p-5 rounded-4 price-table popular h-100">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="mb-3">Institution Package</h3>
-              <p>Specialized CATIA training aligned with automotive, aerospace, and mechanical industry requirements to
-                prepare students for professional design roles.</p>
-              <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-              <div>
-                  <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                  <a class="btn btn-white hover-outline mt-3" href="./assets/pages/quotation.html">Quotation</a>
-              </div>
-            </div>
-            <div class="col-md-6 pricing-features">
-              <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>4 Days of On-campus CATIA Training</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>CDTC Certification upon Completion</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Automotive & Aerospace Modeling Emphasis</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CREO -->
-
-<section class="section pricing__v2" id="pricing-creo">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-5 rounded-4 price-table h-100">
-          <h3>CREO Training</h3>
-          <p>Get hands-on training in parametric and assembly modeling using PTC CREO, tailored for mechanical and
-            product design students.</p>
-          <div class="price mb-4"><strong>₹65,000</strong><span> + GST</span></div>
-          <div><a class="btn" href="#">Course Details</a></div>
-        </div>
-      </div>
-      <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="p-5 rounded-4 price-table popular h-100">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="mb-3">Institution Package</h3>
-              <p>Practical CREO training that builds solid fundamentals in CAD modeling, simulation, and product
-                visualization to boost employability in core industries.</p>
-              <div class="price mb-4"><strong class="me-1">₹65,000</strong><span> + GST</span></div>
-              <div>
-                  <a class="btn btn-white hover-outline mt-3" href="#">Buy Now</a>
-                  <a class="btn btn-white hover-outline mt-3" href="./assets/pages/quotation.html">Quotation</a>
-              </div>
-            </div>
-            <div class="col-md-6 pricing-features">
-              <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>4 Days of On-campus CREO Training</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>CDTC Certification upon Completion</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Real-World Design and Assembly Exercises</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1">
-                    <i class="bi bi-check"></i>
-                  </span><span>Institution Direct Billing (Students Not Charged Directly)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===============================================================================================================================================
-     Certification Section 1
-================================================================================================================================================== -->
-<section class="section pricing__v2" id="certification">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-6 mx-auto text-center">
-        <span class="subtitle text-uppercase mb-3 fs-6">Certification</span>
-        <h2 class="mb-3">Build Future-Ready Design Experts</h2>
-        <p>4-day CAD training with certification and job support — fast, focused, and industry-aligned.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <!-- Left Card: Certification 1 -->
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-5 rounded-4 price-table h-100">
-          <h3>Certification 1</h3>
-          <p>For single software training like AutoCAD, SolidWorks, etc.</p>
-          <div class="price mb-4"><strong>Included</strong></div>
-          <div><a class="btn" href="#">View Certificate</a></div>
-        </div>
-      </div>
-
-      <!-- Right Card -->
-      <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="p-5 rounded-4 price-table popular h-100">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="mb-3">Single Software Certification</h3>
-              <p>Issued upon completion of any individual CAD course with CDTC training and evaluation.</p>
-              <div class="price mb-4"><strong>Free with Course</strong></div>
-              <div>
-                <a class="btn btn-white hover-outline mt-3" href="#">Sample</a>
-                <a class="btn btn-white hover-outline mt-3" href="#">Verify</a>
-              </div>
-            </div>
-            <div class="col-md-6 pricing-features">
-              <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>Issued for AutoCAD, SolidWorks, CATIA, etc.</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>CDTC Authorized Certificate</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>Verifiable by ID</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>Delivered Digitally & in Print</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of Right Card -->
-    </div>
-  </div>
-</section>
-
-<!-- ===============================================================================================================================================
-     Certification Section 2
-================================================================================================================================================== -->
-<section class="section pricing__v2" id="certification-2">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-6 mx-auto text-center">
-        <span class="subtitle text-uppercase mb-3 fs-6">Advanced Certification</span>
-        <h2 class="mb-3">Full Program Certification</h2>
-        <p>For students completing the full 5-software combo training with guided projects and evaluation.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <!-- Left Card: Certification 2 -->
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-5 rounded-4 price-table h-100">
-          <h3>Certification 2</h3>
-          <p>Issued for completion of the 20-day combo CAD training program.</p>
-          <div class="price mb-4"><strong>Included</strong></div>
-          <div><a class="btn" href="#">View Certificate</a></div>
-        </div>
-      </div>
-
-      <!-- Right Card -->
-      <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="p-5 rounded-4 price-table popular h-100">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="mb-3">Master Certification</h3>
-              <p>Recognizes proficiency in all 5 CAD tools with project-based completion and job readiness validation.
-              </p>
-              <div class="price mb-4"><strong>Free with Combo</strong></div>
-              <div>
-                <a class="btn btn-white hover-outline mt-3" href="#">Sample</a>
-                <a class="btn btn-white hover-outline mt-3" href="#">Verify</a>
-              </div>
-            </div>
-            <div class="col-md-6 pricing-features">
-              <h4 class="text-uppercase fw-bold mb-3">What It Covers</h4>
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>AutoCAD, NX, SolidWorks, CATIA, Creo</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>Project-based Skill Evaluation</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>Institutionally Recognized</span>
-                </li>
-                <li class="d-flex gap-2 align-items-start mb-0">
-                  <span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span>
-                  <span>Verifiable and Globally Accepted</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of Right Card -->
-    </div>
-  </div>
-</section>
-
-<!-- ===============================================================================================================================================
-     Placement Support Section
-================================================================================================================================================== -->
-<section class="section pricing__v2" id="placement">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-6 mx-auto text-center">
-        <span class="subtitle text-uppercase mb-3 fs-6">Placement Support</span>
-        <h2 class="mb-3">Launch Your Design Career</h2>
-        <p>We assist students in connecting with leading design and manufacturing companies across India through job
-          prep, mentorship, and referrals.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <!-- Left Card -->
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-5 rounded-4 price-table h-100">
-          <h3>Placement Assistance</h3>
-          <p>Resume building, mock interviews, direct company referrals, and exclusive HR connect after training.</p>
-          <div class="price mb-4"><strong>Included</strong><span> with Training</span></div>
-          <div><a class="btn" href="#">Learn More</a></div>
-        </div>
-      </div>
-
-      <!-- Right Card with Scrolling List -->
-      <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="p-5 rounded-4 price-table popular h-100">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="mb-3">Top Hiring Partners</h3>
-              <p>We connect you to over 100 companies hiring for CAD, Design, and Manufacturing roles.</p>
-              <div class="price mb-4"><strong>100+ Companies</strong></div>
-              <div>
-                <a class="btn btn-white hover-outline mt-3" href="#">Placement Process</a>
-                <a class="btn btn-white hover-outline mt-3" href="#">Get Referred</a>
-              </div>
-            </div>
-
-            <!-- Scrollable Company List with Animation -->
-            <div class="col-md-6 pricing-features">
-              <h4 class="text-uppercase fw-bold mb-3">Top 100 Design Companies</h4>
-              <ul id="companyList" class="scroll-list">
-                <li>Tata Technologies</li>
-                <li>L&T Technology Services</li>
-                <li>Mahindra & Mahindra</li>
-                <li>Ashok Leyland</li>
-                <li>TVS Motor Company</li>
-                <li>Force Motors</li>
-                <li>Bajaj Auto</li>
-                <li>Hero MotoCorp</li>
-                <li>Maruti Suzuki</li>
-                <li>Renault Nissan Technology</li>
-                <li>Robert Bosch Engineering</li>
-                <li>Siemens India</li>
-                <li>General Electric (GE)</li>
-                <li>Alstom</li>
-                <li>ABB India</li>
-                <li>Schneider Electric</li>
-                <li>Volvo Eicher</li>
-                <li>Cummins India</li>
-                <li>John Deere</li>
-                <li>JCB India</li>
-                <li>ISRO</li>
-                <li>DRDO</li>
-                <li>HAL</li>
-                <li>Belcan India</li>
-                <li>Cyient</li>
-                <li>Quest Global</li>
-                <li>Capgemini Engineering</li>
-                <li>KPIT Technologies</li>
-                <li>WABCO India</li>
-                <li>Valeo India</li>
-                <li>ZF India</li>
-                <li>Faurecia</li>
-                <li>Godrej Aerospace</li>
-                <li>Blue Star Ltd</li>
-                <li>Kirloskar Brothers</li>
-                <li>Greaves Cotton</li>
-                <li>Sundaram Clayton</li>
-                <li>Amara Raja Batteries</li>
-                <li>Lucas-TVS</li>
-                <li>TAFE</li>
-                <li>Triveni Turbine</li>
-                <li>Thermax India</li>
-                <li>Kirby Building Systems</li>
-                <li>Technip Energies</li>
-                <li>Mecon Ltd</li>
-                <li>Bharat Forge</li>
-                <li>HCL Tech</li>
-                <li>Dassault Systemes</li>
-                <li>Altair Engineering</li>
-                <li>Ansys</li>
-                <li>TCS Engineering</li>
-                <li>Infosys Engineering</li>
-                <li>Accenture Industry X</li>
-                <li>Mercedes Benz R&D</li>
-                <li>Fiat Chrysler India</li>
-                <li>Magna Steyr</li>
-                <li>Continental Automotive</li>
-                <li>Yamaha Motors R&D</li>
-                <li>Suzuki R&D India</li>
-                <li>Honda Cars India</li>
-                <li>Kia India</li>
-                <li>Skoda Auto Volkswagen</li>
-                <li>Ather Energy</li>
-                <li>Ola Electric</li>
-                <li>Simple Energy</li>
-                <li>Bosch Rexroth</li>
-                <li>Havells India</li>
-                <li>Philips India</li>
-                <li>Lumax Industries</li>
-                <li>Minda Corporation</li>
-                <li>Varroc Engineering</li>
-                <li>ReNew Power</li>
-                <li>BHEL</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- ======= Custom Styling ======= -->
 <style>
-  .scroll-list {
-    max-height: 400px;
-    overflow-y: scroll;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
+  #timeline {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  .scroll-list li {
-    font-size: 1rem;
-    padding: 8px 12px;
-    transition: all 0.3s ease;
-    opacity: 0.6;
+  .black-background-wrapper {
+    background-color: #000;
+    padding: 20px 0;
+    width: 100%;
   }
 
-  .scroll-list li.active {
-    font-size: 1.2rem;
-    font-weight: bold;
-    opacity: 1;
-    background-color: #f1f5f9;
-    border-radius: 8px;
-    color: blue;
+  .image-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .image-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+
+  #timeline h2 {
+    margin-bottom: 10px;
   }
 </style>
 
-<script>
-  const list = document.getElementById('companyList');
-  list.addEventListener('scroll', () => {
-    const items = list.querySelectorAll('li');
-    const listTop = list.getBoundingClientRect().top + list.offsetHeight / 2;
 
-    items.forEach((item) => {
-      const box = item.getBoundingClientRect();
-      const itemMid = box.top + box.height / 2;
+<!-- ======= Trusted by Industry Leaders Section with Seamless Marquee ======= -->
+<style>
+  .marquee-container {
+    width: 100vw;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 0;
+  }
 
-      if (Math.abs(itemMid - listTop) < 25) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
-    });
-  });
-</script>
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-marquee 30s linear infinite;
+  }
+
+  .marquee-track img {
+    height: 50px;
+    margin: 0 30px;
+    object-fit: contain;
+  }
+
+  @keyframes scroll-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+<!-- Section Heading -->
+<div class="text-center mb-5">
+  <span class="text-uppercase text-primary fw-semibold fs-6">Trusted By Industry Leaders</span>
+  <h2 class="fw-bold">Our Valuable Organisations</h2>
+</div>
+
+<!-- Seamless Scrolling Logo Marquee -->
+<div class="marquee-container">
+  <div class="marquee-track">
+    <!-- Logos duplicated twice for seamless loop -->
+    <img src="assets/images/logo/logo-uber__black.svg" alt="Uber">
+    <img src="assets/images/logo/logo-air-bnb__black.svg" alt="Airbnb">
+    <img src="assets/images/logo/logo-american-apparel.svg" alt="American Apparel">
+    <img src="assets/images/logo/logo-american-apparel__black.svg" alt="American Apparel Black">
+    <img src="assets/images/logo/logo-apple.svg" alt="Apple">
+    <img src="assets/images/logo/logo-google__black.svg" alt="Google">
+    <img src="assets/images/logo/logo-ibm.svg" alt="IBM">
+    <img src="assets/images/logo/logo-invision.svg" alt="InVision">
+    <img src="assets/images/logo/logo-microsoft.svg" alt="Microsoft">
+    <img src="assets/images/logo/logo-youtube.svg" alt="YouTube">
+    <img src="assets/images/logo/logo-netflix.svg" alt="Netflix">
+
+    <!-- Duplicate for seamless loop -->
+    <img src="assets/images/logo/logo-uber__black.svg" alt="Uber">
+    <img src="assets/images/logo/logo-air-bnb__black.svg" alt="Airbnb">
+    <img src="assets/images/logo/logo-american-apparel.svg" alt="American Apparel">
+    <img src="assets/images/logo/logo-american-apparel__black.svg" alt="American Apparel Black">
+    <img src="assets/images/logo/logo-apple.svg" alt="Apple">
+    <img src="assets/images/logo/logo-google__black.svg" alt="Google">
+    <img src="assets/images/logo/logo-ibm.svg" alt="IBM">
+    <img src="assets/images/logo/logo-invision.svg" alt="InVision">
+    <img src="assets/images/logo/logo-microsoft.svg" alt="Microsoft">
+    <img src="assets/images/logo/logo-youtube.svg" alt="YouTube">
+    <img src="assets/images/logo/logo-netflix.svg" alt="Netflix">
+  </div>
+</div>
 
 
 
 
 
-
-
-        
-<!-- ======= How it works =======-->
-<section class="section howitworks__v1" id="how-it-works">
-  <div class="container">
+<!-- ======= How it Works Section (Full Width, Clean, No Icons) =======-->
+<section class="section howitworks__v1 bg-white py-5" id="how-it-works">
+  <div class="container-fluid px-lg-5">
     <div class="row mb-5">
-      <div class="col-md-6 text-center mx-auto">
-        <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0"></span>
-        <h2 data-aos="fade-up" data-aos-delay="100">How It Works</h2>
-        <p data-aos="fade-up" data-aos-delay="200">
-          Whether you're a student or working professional, our certification process is simple and effective. Here’s
-          how to get started:
+      <div class="col-12 text-center">
+              <span class="text-uppercase text-primary fw-semibold fs-6">How it Works</span>
+        <h2 class="fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">Your Journey to Certification & Placement</h2>
+        <p class="text-muted" data-aos="fade-up" data-aos-delay="200">
+          Whether you're a student or a working professional, our process is easy to follow and result-oriented.
         </p>
       </div>
     </div>
 
-    <div class="row g-md-5">
-
+    <div class="row g-4 justify-content-center px-lg-5">
       <!-- Step 1 -->
       <div class="col-md-6 col-lg-3">
-        <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
-          data-aos="fade-up" data-aos-delay="0">
-          <div data-aos="fade-right" data-aos-delay="500">
-            <img class="arch-line" src="assets/images/arch-line.svg" alt="process line">
-          </div>
-          <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
-          <div>
-            <h3 class="fs-5 mb-4">Register Online</h3>
-            <p>Sign up for a CAD course of your choice (AutoCAD, SolidWorks, Creo, etc.) through our website or mobile
-              app.</p>
-          </div>
+        <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative" data-aos="fade-up" data-aos-delay="0">
+          <img class="arch-line" src="assets/images/arch-line.svg" alt="line">
+          <span class="step-number rounded-circle fw-bold mb-4 mx-auto">1</span>
+          <h3 class="fs-5 mb-3">Register Online</h3>
+          <p class="small text-muted">Choose a CAD course (AutoCAD, SolidWorks, etc.) and register via our website or app.</p>
         </div>
       </div>
 
       <!-- Step 2 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-        <div class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
-          <div data-aos="fade-right" data-aos-delay="1100">
-            <img class="arch-line reverse" src="assets/images/arch-line-reverse.svg" alt="process line">
-          </div>
-          <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
-          <h3 class="fs-5 mb-4">Attend the Training Program</h3>
-          <p>Join the 4-day expert-led training sessions, complete assignments, and work on real design projects.</p>
+      <div class="col-md-6 col-lg-3">
+        <div class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative" data-aos="fade-up" data-aos-delay="300">
+          <img class="arch-line reverse" src="assets/images/arch-line-reverse.svg" alt="line">
+          <span class="step-number rounded-circle fw-bold mb-4 mx-auto">2</span>
+          <h3 class="fs-5 mb-3">Attend Training</h3>
+          <p class="small text-muted">Join our expert-led 4-day session, complete assignments & practical design tasks.</p>
         </div>
       </div>
 
       <!-- Step 3 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
-        <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
-          <div data-aos="fade-right" data-aos-delay="1700">
-            <img class="arch-line" src="assets/images/arch-line.svg" alt="process line">
-          </div>
-          <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
-          <h3 class="fs-5 mb-4">Get Certified</h3>
-          <p>Receive your industry-recognized certificate after successful completion, ready to add to your resume and
-            LinkedIn.</p>
+      <div class="col-md-6 col-lg-3">
+        <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative" data-aos="fade-up" data-aos-delay="600">
+          <img class="arch-line" src="assets/images/arch-line.svg" alt="line">
+          <span class="step-number rounded-circle fw-bold mb-4 mx-auto">3</span>
+          <h3 class="fs-5 mb-3">Get Certified</h3>
+          <p class="small text-muted">After successful completion, get your industry-recognized certificate for your resume.</p>
         </div>
       </div>
 
       <!-- Step 4 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
-        <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative">
-          <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
-          <div>
-            <h3 class="fs-5 mb-4">Get Placed</h3>
-            <p>Our placement team will connect you with 100+ top design companies across India for core mechanical
-              roles.</p>
-          </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative" data-aos="fade-up" data-aos-delay="900">
+          <span class="step-number rounded-circle fw-bold mb-4 mx-auto">4</span>
+          <h3 class="fs-5 mb-3">Get Placed</h3>
+          <p class="small text-muted">Our placement team refers you to top companies across India for core CAD roles.</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-<!-- End How it works-->
-
         
-        <!-- ======= Stats =======-->
-        <section class="stats__v3 section">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex flex-wrap content rounded-4" data-aos="fade-up" data-aos-delay="0">
-                  <div class="rounded-borders">
-                    <div class="rounded-border-1"></div>
-                    <div class="rounded-border-2"></div>
-                    <div class="rounded-border-3"></div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-item">
-                      <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2">0</span><span>K+</span></h3>
-                      <p class="mb-0">Customer Satisfaction</p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-item">
-                      <h3 class="fs-1 fw-bold"> <span class="purecounter" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="2">0</span><span>%+</span></h3>
-                      <p class="mb-0">Revenue Increase</p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-item">
-                      <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2">0</span><span>x</span></h3>
-                      <p class="mb-0">Business Growth</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Stats-->
-        
+<!-- ======= Features Section (With Black Background Image) ======= -->
+<section class="section features__v2 bg-light py-5" id="features">
+  <div class="container text-center">
+    <!-- Section Title & Description -->
+    <h2 class="mb-4 fw-bold text-black">Why Choose Us</h2>
 
-      <!-- ======= Testimonials =======-->
-      <section class="section testimonials__v2" id="testimonial">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-lg-5 mx-auto text-center">
-              <span class="subtitle text-uppercase mb-3 fs-6" data-aos="fade-up">Testimonials</span>
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">What Our Students Say</h2>
-              <p data-aos="fade-up" data-aos-delay="200">
-                Hear from students and professionals who have upskilled through our CAD certification programs and secured
-                placements in top design firms.
-              </p>
-            </div>
-          </div>
-      
-          <div class="row g-4" data-masonry="{&quot;percentPosition&quot;: true }">
-      
-            <!-- Testimonial 1 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">
-                  &ldquo;
-                  The 4-day CAD workshop was eye-opening. I learned SolidWorks from scratch and earned a certificate that
-                  helped me land an internship at a manufacturing company. Highly recommended!
-                  &rdquo;
-                </blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-2-min.jpg"
-                      alt="testimonial"></div>
-                  <div class="lh-base"><strong class="d-block">Shoban</strong><span>Mechanical Engineering Student</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Testimonial 2 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">
-                  &ldquo;
-                  I had no prior CAD knowledge, but the trainers made AutoCAD so easy to understand. Their placement team
-                  helped me get interviews with three design firms. I now work full-time as a junior CAD engineer.
-                  &rdquo;
-                </blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-1-min.jpg"
-                      alt="testimonial"></div>
-                  <div class="lh-base"><strong class="d-block">Priyanka</strong><span>Diploma Graduate</span></div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Testimonial 3 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">
-                  &ldquo;
-                  The Creo training was highly practical. We designed real components and assemblies. I added the certificate
-                  to my LinkedIn and got shortlisted for a core design job within two weeks.
-                  &rdquo;
-                </blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-5-min.jpg"
-                      alt="testimonial"></div>
-                  <div class="lh-base"><strong class="d-block">Dayanand</strong><span>Placed in Pune Design Studio</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Testimonial 4 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">
-                  &ldquo;
-                  As a civil engineer, I benefited immensely from the AutoCAD and Revit modules. Now I confidently draft and
-                  present floor plans in my job. The training bridged the gap between college and industry.
-                  &rdquo;
-                </blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-3-min.jpg"
-                      alt="testimonial"></div>
-                  <div class="lh-base"><strong class="d-block">Shweta</strong><span>Civil Engineer</span></div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Testimonial 5 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">
-                  &ldquo;
-                  I enrolled my students for the industrial CAD certification. The trainers were punctual, skilled, and
-                  patient. The hands-on approach and live projects made a lasting impact.
-                  &rdquo;
-                </blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-7-min.jpg"
-                      alt="testimonial"></div>
-                  <div class="lh-base"><strong class="d-block">Nilesh</strong><span>Sales Dept.</span></div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Testimonial 6 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">
-                  &ldquo;
-                  The placement assistance exceeded expectations. After completing the CATIA training, I received direct calls
-                  from three recruiters. The certification was a great career boost.
-                  &rdquo;
-                </blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-8-min.jpg"
-                      alt="testimonial"></div>
-                  <div class="lh-base"><strong class="d-block">Somya</strong><span>Design Engineer Trainee</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-          </div>
+    <!-- Centered One-Line Text -->
+<div class="one-line-text-wrapper">
+  <p class="one-line-text">
+    Our <span class="fw-semibold text-black">4-day CAD training program</span> prepares students for real-world scenarios with
+    <strong class="text-primary">industry-relevant tools</strong> and <strong class="text-primary">hands-on practice</strong>.
+  </p>
+</div>
+
+<!-- Custom CSS -->
+<style>
+  .one-line-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+
+  .one-line-text {
+    font-size: 1rem;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 576px) {
+    .one-line-text {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+
+  </div>
+
+  <!-- Full-width black background with image -->
+  <div class="black-background-wrapper">
+    <div class="image-inner">
+      <img src="assets/images/_- visual selection1.png" alt="Why Choose Us Visual" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
+
+<!-- ======= Custom Styling ======= -->
+<style>
+  #features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .black-background-wrapper {
+    background-color: #000;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .image-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .image-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+</style>
+
+
+
+
+
+
+
+
+<!-- ======= Placement Support Section (Continuous Marquee) ======= -->
+<section class="section bg-light py-5" id="placement">
+  <div class="container-fluid px-0">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-5 px-3">
+      <span class="text-uppercase text-primary fw-semibold fs-6">Placement Support & Hiring Network</span>
+      <h2 class="fw-bold">Top Core Companies Hiring Our Trained Students</h2>
+      <p class="text-muted small">We proudly collaborate with 100+ industry-leading organizations to support student placements across India.</p>
+    </div>
+
+    <!-- Continuous Marquee Track -->
+    <div class="marquee-container-full">
+      <div class="marquee-track-wrapper">
+        <div class="marquee-track text-dark fw-semibold small">
+          <span class="mx-4">Tata Technologies</span>
+          <span class="mx-4">L&T Technology Services</span>
+          <span class="mx-4">Mahindra & Mahindra</span>
+          <span class="mx-4">Ashok Leyland</span>
+          <span class="mx-4">Maruti Suzuki</span>
+          <span class="mx-4">TVS Motor</span>
+          <span class="mx-4">Hero MotoCorp</span>
+          <span class="mx-4">ISRO</span>
+          <span class="mx-4">DRDO</span>
+          <span class="mx-4">HAL</span>
+          <span class="mx-4">Bosch</span>
+          <span class="mx-4">Siemens</span>
+          <span class="mx-4">John Deere</span>
+          <span class="mx-4">JCB</span>
+          <span class="mx-4">Altair</span>
+          <span class="mx-4">Dassault</span>
+          <span class="mx-4">HCL</span>
+          <span class="mx-4">Ather Energy</span>
+          <span class="mx-4">Ola Electric</span>
+          <span class="mx-4">WABCO</span>
+
+          <!-- Repeat for seamless loop -->
+          <span class="mx-4">Tata Technologies</span>
+          <span class="mx-4">L&T Technology Services</span>
+          <span class="mx-4">Mahindra & Mahindra</span>
+          <span class="mx-4">Ashok Leyland</span>
+          <span class="mx-4">Maruti Suzuki</span>
+          <span class="mx-4">TVS Motor</span>
+          <span class="mx-4">Hero MotoCorp</span>
+          <span class="mx-4">ISRO</span>
+          <span class="mx-4">DRDO</span>
+          <span class="mx-4">HAL</span>
+          <span class="mx-4">Bosch</span>
+          <span class="mx-4">Siemens</span>
+          <span class="mx-4">John Deere</span>
+          <span class="mx-4">JCB</span>
+          <span class="mx-4">Altair</span>
+          <span class="mx-4">Dassault</span>
+          <span class="mx-4">HCL</span>
+          <span class="mx-4">Ather Energy</span>
+          <span class="mx-4">Ola Electric</span>
+          <span class="mx-4">WABCO</span>
         </div>
-      </section>
-      <!-- End Testimonials -->
+      </div>
+    </div>
 
-        
-    <!-- ======= FAQ =======-->
-    <section class="section faq__v2" id="faqs">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-md-6 col-lg-7 mx-auto text-center">
-            <span class="subtitle text-uppercase mb-3 fs-6" data-aos="fade-up">FAQs</span>
-            <h2 class="h2 fw-bold mb-3" data-aos="fade-up">Frequently Asked Questions</h2>
-            <p data-aos="fade-up" data-aos-delay="100">
-              We've answered some common questions to help you understand our CAD training, certification process, and
-              placement support better.
-            </p>
-          </div>
+  </div>
+</section>
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.marquee-container-full {
+  width: 100vw;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track-wrapper {
+  width: 200%;
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.marquee-track span {
+  display: inline-block;
+  padding: 0 24px;
+  color: #000;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+       
+<!-- ======= Footer =======-->
+<style>
+  .footer h3 {
+    font-size: 1.5rem; /* Adjust size if needed */
+    font-weight: 1000;    /* Bold */
+  }
+</style>
+
+<footer class="footer pt-5 pb-5 bg-primary text-white">
+  <div class="container">
+
+    <!-- Main Footer Content -->
+    <div class="row justify-content-between mb-5 g-xl-5">
+
+      <!-- About & Social -->
+      <div class="col-md-4 mb-5 mb-lg-0">
+        <h3 class="mb-3">About</h3>
+        <hr>
+        <p>Harness our tools to transform ideas into impactful designs. Create with ease and share your vision effortlessly.</p>
+        <!-- Social Media Icons -->
+        <div class="d-flex gap-3 mt-4">
+          <a href="https://www.linkedin.com" target="_blank" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com" target="_blank" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com" target="_blank" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
         </div>
-    
-        <div class="row">
-          <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
-            <div class="faq-content">
-              <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
-    
-                <!-- FAQ 1 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
-                      aria-expanded="true">
-                      What software tools are covered in the training?
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse collapse show" id="faq1">
-                    <div class="accordion-body">
-                      Our program covers top industry software such as AutoCAD, SolidWorks, CATIA, Creo, and Siemens NX. You
-                      can choose to specialize in one or learn multiple tools depending on your goals.
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- FAQ 2 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#faq2">
-                      Do I receive a certificate after completing the training?
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="faq2">
-                    <div class="accordion-body">
-                      Yes, all participants receive a professional CAD Design Training Certificate from CDTC upon successful
-                      course completion. This certificate adds value to your resume and boosts your credibility with
-                      employers.
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- FAQ 3 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#faq3">
-                      Is placement assistance included?
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="faq3">
-                    <div class="accordion-body">
-                      Yes. We connect certified candidates with over 100 design and manufacturing companies across India.
-                      Support includes resume writing, mock interviews, and direct HR referrals for core design roles.
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- FAQ 4 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#faq4">
-                      Who can enroll in this program?
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="faq4">
-                    <div class="accordion-body">
-                      Engineering students (especially Mechanical, Civil, and Electrical), diploma holders, and recent
-                      graduates can enroll. No prior software knowledge is required — our course starts from the basics.
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- FAQ 5 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#faq5">
-                      How long is the training and where is it conducted?
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="faq5">
-                    <div class="accordion-body">
-                      Our standard course duration is 4 days per software, conducted on-campus at your institution. We also
-                      offer custom durations and online options for special cases upon request.
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- FAQ 6 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#faq6">
-                      Will I work on real-world projects during the course?
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="faq6">
-                    <div class="accordion-body">
-                      Absolutely. Our training includes hands-on projects like 2D drafting, 3D modeling, and industrial
-                      design tasks to help you build a job-ready portfolio aligned with industry needs.
-                    </div>
-                  </div>
-                </div>
-    
-              </div> <!-- /.accordion -->
-            </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-7">
+        <div class="row gy-4">
+
+          <!-- Company -->
+          <div class="col-6 col-lg-4">
+            <h3 class="mb-3">Company</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#courses" class="text-white text-decoration-none">Courses</a></li>
+              <li><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+              <li><a href="page-terms-conditions.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+              <li><a href="page-privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Accounts -->
+          <div class="col-6 col-lg-4">
+            <h3 class="mb-3">Accounts</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="page-signup.html" class="text-white text-decoration-none">Register</a></li>
+              <li><a href="page-signin.html" class="text-white text-decoration-none">Sign In</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-12 col-lg-4">
+            <h3 class="mb-3">Contact</h3>
+            <hr>
+            <p class="d-flex mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Jaraka, Jajpur, Odisha,<br>755050, India</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cdtc.edu@gmail.com" target="_blank"
+                  class="d-flex mb-2 text-white text-decoration-none">
+                  <i class="bi bi-envelope-fill me-2"></i>cdtc.edu@gmail.com
+                </a>            
+              <a href="tel:+917735791012" class="d-flex text-white text-decoration-none"><i class="bi bi-telephone-fill me-2"></i>+91 77 357 91012</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End FAQ -->
+    </div>
 
-        
-        <!-- ======= Contact =======-->
-        <section class="section contact__v2" id="contact">
-          <div class="container">
-            <div class="row mb-5">
-              <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3 fs-6" data-aos="fade-up" data-aos-delay="0">Contact</span>
+    <!-- Footer Bottom -->
+    <div class="row border-top border-light pt-4">
+      <div class="col-12 text-center">
+        &copy; <script>document.write(new Date().getFullYear());</script> CDTC. All rights reserved.
+      </div>
+    </div>
 
-<p data-aos="fade-up" data-aos-delay="100">Transform your ideas into reality with our powerful tools—design, refine, and
-  share your creations effortlessly.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="d-flex gap-5 flex-column">
-                  <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
-                    <div class="icon d-block"><i class="bi bi-telephone"></i></div><span> <span class="d-block">Phone</span><strong>+91 77 357 91012</strong></span>
-                  </div>
-                  <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon d-block"><i class="bi bi-send"></i></div><span> <span class="d-block">Email</span><strong>cdtc.edu@gmail.com</strong></span>
-                  </div>
-                  <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon d-block"><i class="bi bi-geo-alt"></i></div><span> <span class="d-block">Address</span>
-                      <address class="fw-bold">jaraka, jajpur, odisha, <br> 755050 India</address></span>
-                  </div>
-                </div>
-              </div>
-              
-            <div class="col-md-6">
-              <div class="form-wrapper" data-aos="fade-up" data-aos-delay="300">
-                <form id="contactForm">
-                  <div class="row gap-3 mb-3">
-                    <div class="col-md-12">
-                      <label class="mb-2" for="name">Name <span class="text-danger">*</span></label>
-                      <input class="form-control" id="name" type="text" name="name" required>
-                    </div>
-                    <div class="col-md-12">
-                      <label class="mb-2" for="email">Email <span class="text-danger">*</span></label>
-                      <input class="form-control" id="email" type="email" name="email" required>
-                    </div>
-                  </div>
-                  <div class="row gap-3 mb-3">
-                    <div class="col-md-12">
-                      <label class="mb-2" for="subject">Subject</label>
-                      <input class="form-control" id="subject" type="text" name="subject">
-                    </div>
-                  </div>
-                  <div class="row gap-3 gap-md-0 mb-3">
-                    <div class="col-md-12">
-                      <label class="mb-2" for="message">Message <span class="text-danger">*</span></label>
-                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                    </div>
-                  </div>
-                  <button class="btn btn-primary fw-semibold" type="submit">Send Message</button>
-                </form>
-                <div class="mt-3 d-none alert alert-success" id="successMessage">Message sent successfully!</div>
-                <div class="mt-3 d-none alert alert-danger" id="errorMessage">Message sending failed. Please try again later.</div>
-              </div>
-            </div>
+  </div>
+</footer>
+<!-- End Footer -->
 
 
 
-            </div>
-          </div>
-        </section>
-        <!-- End Contact-->
-        
-        <!-- ======= Footer =======-->
-        <footer class="footer pt-5 pb-5">
-          <div class="container">
-            <div class="row mb-5 pb-4">
-              <div class="col-md-7">
-                <h2 class="fs-5">Join Our Newsletter</h2>
-                <p>Get the latest updates, expert insights, and exclusive offers—delivered straight to your inbox.</p>
-
-              </div>
-              <div class="col-md-5">
-                <form class="d-flex gap-2">
-                  <input class="form-control" type="email" placeholder="Email your email" required="">
-                  <button class="btn btn-primary fs-6" type="submit">Subscribe</button>
-                </form>
-              </div>
-            </div>
-            <div class="row justify-content-between mb-5 g-xl-5">
-              <div class="col-md-4 mb-5 mb-lg-0">
-              <h3 class="mb-3">About</h3>
-              <p class="mb-4">Harness our tools to transform ideas into impactful designs. Create with ease and share your vision
-                effortlessly.</p>
-
-              </div>
-              <div class="col-md-7">
-                <div class="row g-2">
-                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <h3 class="mb-3">Company</h3>
-                    <ul class="list-unstyled">
-                    
-                      <li><a href="page-terms-conditions.html">Terms &amp; Conditions</a></li>
-                      <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-                     
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <h3 class="mb-3">Accounts</h3>
-                    <ul class="list-unstyled">
-                      <li><a href="page-signup.html">Register</a></li>
-                      <li><a href="page-signin.html">Sign in</a></li>
-                      
-                      
-                     
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
-                    <h3 class="mb-3">Contact</h3>
-                    <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i><span>jaraka, jajpur, odisha,
-                    <br> 755050 India</span></p>
-                    <a class="d-flex mb-3" href="https://mail.google.com/mail/?view=cm&fs=1&to=cdtc.edu@gmail.com"><i class="bi bi-envelope-fill me-3"></i><span>cdtc.edu@gmail.com
-</span></a>
-                    <a class="d-flex mb-3" href="tel://+123456789900"><i class="bi bi-telephone-fill me-3"></i><span>+91 77 357 91012</span></a><a class="d-flex mb-3" href="https://freebootstrap.net"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row credits pt-3">
-              <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
-                <!--
-                Note:
-                =>>> Please keep all the footer links intact. <<<=
-                =>>> You can only remove the links if you buy the pro version. <<<=
-                =>>> Buy the pro version, which includes a functional PHP/AJAX contact form and many additional features.: https://freebootstrap.net/template/vertex-pro-bootstrap-website-template-for-portfolio/ <<<=
-                --> 
-                &copy;
-                <script>document.write(new Date().getFullYear());</script> CDTC. 
-                 All rights reserved. 
-              </div>
-             <!-- <div class="col-xl-4 justify-content-start justify-content-xl-end quick-links d-flex flex-column flex-xl-row text-center text-xl-start gap-1">Distributed by<a href="https://themewagon.com" target="_blank">ThemeWagon</a></div> -->
-            </div>
-          </div>
-        </footer>
-        <!-- End Footer-->
         
       </main>
     </div>
