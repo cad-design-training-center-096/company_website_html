@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> CDTC Official </title>
-
+     
     <!-- ======= Google Font =======-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
     <!-- End Google Font-->
-
+    
     <!-- ======= Styles =======-->
     <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -19,372 +18,360 @@
     <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendors/aos/aos.css" rel="stylesheet">
     <!-- End Styles-->
-
+    
     <!-- ======= Theme Style =======-->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- End Theme Style-->
 
-
-
+  
+    
     <!-- ======= Apply theme =======-->
     <script>
-        // Apply the theme as early as possible to avoid flicker
-        (function () {
-            const storedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-bs-theme', storedTheme);
-        })();
+      // Apply the theme as early as possible to avoid flicker
+      (function() {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+      })();
     </script>
-</head>
-
-<body>
-
-
+  </head>
+  <body>
+    
+    
     <!-- ======= Site Wrap =======-->
     <div class="site-wrap">
+      
+      
+      <!-- ======= Header =======-->
+<header class="fbs__net-navbar navbar navbar-expand-lg fixed-top bg-white shadow-sm" aria-label="freebootstrap.net navbar">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- Start Logo-->
+    <a class="navbar-brand w-auto" href="index.html">
+      <!-- Uncomment to use a text logo -->
+      <!-- Vertex --> 
+      
+      <!-- 
+      <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
+      <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"> 
+      -->
+    </a>
+    <!-- End Logo-->
+
+    <!-- Start offcanvas-->
+    <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+      
+      <div class="offcanvas-header">
+        <div class="offcanvas-header-logo">
+          <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+            <!-- logo dark -->
+            <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
+            <!-- logo light -->
+            <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder">
+          </a>
+        </div>
+        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body align-items-lg-center">
+        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+           <li class="nav-item"><a class="nav-link scroll-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End offcanvas-->
+
+    <div class="ms-auto w-auto">
+      <div class="header-social d-flex align-items-center gap-1">
+        <a class="btn btn-primary py-2" href="#">Buy Now</a>
+        <a class="btn btn-primary py-2" href="./assets/pages/quotation.html">Quotation</a>
+
+        <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+          <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="21" x2="3" y1="6" y2="6"></line>
+            <line x1="15" x2="3" y1="12" y2="12"></line>
+            <line x1="17" x2="3" y1="18" y2="18"></line>
+          </svg>
+          <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Header -->
+
+      
+      <!-- ======= Main =======-->
+      <main>
+        
+        
+<!-- ======= Hero with Video Background and Top Gradient Overlay ======= -->
+<section id="hero-video" style="position: relative; height: 100vh; overflow: hidden;">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: -1;">
+    <source src="assets/video/clay_4a485c49f2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Gradient Overlay: Black and Airbus Blue fade down -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 51, 141, 0.3) 30%, rgba(0, 51, 141, 0) 60%);
+    z-index: 0;">
+  </div>
+
+  <!-- Hero Content: Centered horizontally, aligned to bottom -->
+  <div class="container h-100 d-flex flex-column justify-content-end align-items-center text-center text-white" style="position: relative; z-index: 1; padding-bottom: 60px;">
+    <div>
+      <h1 class="display-4 fw-bold mb-4" style="color: #ffffff;">Design Beyond Engineering</h1>
+      <a href="#contact" class="btn btn-light me-2">Get Started</a>
+      <a href="#about" class="btn btn-outline-light">Learn More</a>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+ <!-- =============================================================================================================================================== 
+     Placement Support Section with Black Background
+==================================================================================================================================================-->
+<!-- ======= Placement Support Section (White Background) ======= -->
+<section class="section bg-white py-5" id="placement">
+  <div class="container-fluid px-0">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-5 px-3 text-dark">
+      <span class="text-uppercase text-primary fw-semibold fs-6">Placement Support & Hiring Network</span>
+      <h2 class="fw-bold">Top Core Companies Hiring Our Trained Students</h2>
+      <p class="text-secondary small">We proudly collaborate with 100+ industry-leading organizations to support student placements across India.</p>
+    </div>
+
+    <!-- Continuous Marquee Track -->
+    <div class="marquee-container-white">
+      <div class="marquee-track-wrapper">
+        <div class="marquee-track">
+          <span class="mx-4">Tata Technologies</span>
+          <span class="mx-4">L&T Technology Services</span>
+          <span class="mx-4">Mahindra & Mahindra</span>
+          <span class="mx-4">Ashok Leyland</span>
+          <span class="mx-4">Maruti Suzuki</span>
+          <span class="mx-4">TVS Motor</span>
+          <span class="mx-4">Hero MotoCorp</span>
+          <span class="mx-4">ISRO</span>
+          <span class="mx-4">DRDO</span>
+          <span class="mx-4">HAL</span>
+          <span class="mx-4">Bosch</span>
+          <span class="mx-4">Siemens</span>
+          <span class="mx-4">John Deere</span>
+          <span class="mx-4">JCB</span>
+          <span class="mx-4">Altair</span>
+          <span class="mx-4">Dassault</span>
+          <span class="mx-4">HCL</span>
+          <span class="mx-4">Ather Energy</span>
+          <span class="mx-4">Ola Electric</span>
+          <span class="mx-4">WABCO</span>
+
+          <!-- Repeated for loop effect -->
+          <span class="mx-4">Tata Technologies</span>
+          <span class="mx-4">L&T Technology Services</span>
+          <span class="mx-4">Mahindra & Mahindra</span>
+          <span class="mx-4">Ashok Leyland</span>
+          <span class="mx-4">Maruti Suzuki</span>
+          <span class="mx-4">TVS Motor</span>
+          <span class="mx-4">Hero MotoCorp</span>
+          <span class="mx-4">ISRO</span>
+          <span class="mx-4">DRDO</span>
+          <span class="mx-4">HAL</span>
+          <span class="mx-4">Bosch</span>
+          <span class="mx-4">Siemens</span>
+          <span class="mx-4">John Deere</span>
+          <span class="mx-4">JCB</span>
+          <span class="mx-4">Altair</span>
+          <span class="mx-4">Dassault</span>
+          <span class="mx-4">HCL</span>
+          <span class="mx-4">Ather Energy</span>
+          <span class="mx-4">Ola Electric</span>
+          <span class="mx-4">WABCO</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.marquee-container-white {
+  width: 100vw;
+  background-color: #fff; /* white background */
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track-wrapper {
+  width: 200%;
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  align-items: center;
+  color: #000; /* black text */
+}
+
+.marquee-track span {
+  display: inline-block;
+  padding: 0 24px;
+  color: #000; /* black text */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
 
 
-        <!-- ======= Header =======-->
-        <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
-            <div class="container d-flex align-items-center justify-content-between">
 
-
-                <!-- Start Logo-->
-                <a class="navbar-brand w-auto" href="index.html">
-                    <!-- If you use a text logo, uncomment this if it is commented-->
-                    <!-- Vertex-->
-<!--        
-           <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
-            
-           <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"> -->
-
-                </a>
-                <!-- End Logo-->
-
-                <!-- Start offcanvas-->
-                <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
-                    aria-labelledby="fbs__net-navbarsLabel">
-
-
-                    <div class="offcanvas-header">
-                        <div class="offcanvas-header-logo">
-
-                            <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
-
-
-                                <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
-                                    alt="FreeBootstrap.net image placeholder">
-
-                                <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg"
-                                    alt="FreeBootstrap.net image placeholder"></a>
-
-                        </div>
-                        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-
-                    <div class="offcanvas-body align-items-lg-center">
-                        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page"
-                                    href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
-                            <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End offcanvas-->
-
-                <div class="ms-auto w-auto">
-
-
-                    <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2"
-                            href="#">Buy Now</a>
-                        <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2"
-                                href="./assets/pages/quotation.html">Quotation</a>
-
-                            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
-                                data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars"
-                                aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
-                                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="21" x2="3" y1="6" y2="6"></line>
-                                    <line x1="15" x2="3" y1="12" y2="12"></line>
-                                    <line x1="17" x2="3" y1="18" y2="18"></line>
-                                </svg>
-                                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 6 6 18"></path>
-                                    <path d="m6 6 12 12"></path>
-                                </svg>
-                            </button>
-
-                        </div>
-
-                    </div>
-                </div>
-        </header>
-
-        <div style="height: 50px;"></div>
-        <!-- End Header-->
-
-        <!-- ======= Main =======-->
-        <main>
-
-  <!-- ===============================================================================================================================================
-     Placement Support Section -->
-
-<section class="section pricing__v2" id="placement">
+<section class="section pricing__v2 py-5" id="placement" style="background-color: #000; color: #fff;">
     <div class="container">
+        <!-- Section Title -->
         <div class="row mb-5">
             <div class="col-md-6 mx-auto text-center">
-                <span class="subtitle text-uppercase mb-3 fs-6">Placement Support</span>
-                <h2 class="mb-3">Launch Your Design Career</h2>
-                <p>We assist students in connecting with leading design and manufacturing companies across India through
-                    job
-                    prep, mentorship, and referrals.</p>
+                
+                <h2 class="mb-3 text-white">Launch Your Design Career</h2>
+                <p class="text-white-50">We assist students in preparing for jobs in design, drafting, manufacturing, and quality fields across multiple engineering disciplines and software platforms.</p>
             </div>
         </div>
 
-        <div class="row">
-            <!-- Left Card -->
-            <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                <div class="p-5 rounded-4 price-table h-100">
-                    <h3>Placement Assistance</h3>
-                    <p>Resume building, mock interviews, direct company referrals, and exclusive HR connect after
-                        training.</p>
-                    <div class="price mb-4"><strong>Included</strong><span> with Training</span></div>
-                    <div><a class="btn" href="#">Learn More</a></div>
+        <!-- Support Details -->
+        <div class="row g-4">
+            <!-- Box 1 -->
+            <div class="col-md-4">
+                <div class="text-center border-0 shadow-sm bg-dark text-white p-4 h-100 rounded-4">
+                    <img src="assets/images/Placement/97.png" alt="Engineering Disciplines and Industries" class="img-fluid mb-4" style="max-height: 120px;">
+                    <h5 class="fw-bold mb-3">Multiple Industries</h5>
+                    <p class="text-white-50">Opportunities in mechanical, civil, aeronautical, automobile, electronics, electrical, marine, shipbuilding, and other industries.</p>
                 </div>
             </div>
 
-            <!-- Right Card with Scrolling List -->
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                <div class="p-5 rounded-4 price-table popular h-100">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="mb-3">Top Hiring Partners</h3>
-                            <p>We connect you to over 100 companies hiring for CAD, Design, and Manufacturing roles.</p>
-                            <div class="price mb-4"><strong>100+ Companies</strong></div>
-                            <div>
-                                <a class="btn btn-white hover-outline mt-3" href="#">Placement Process</a>
-                                <a class="btn btn-white hover-outline mt-3" href="#">Get Referred</a>
-                            </div>
-                        </div>
+            <!-- Box 2 -->
+            <div class="col-md-4">
+                <div class="text-center border-0 shadow-sm bg-dark text-white p-4 h-100 rounded-4">
+                    <img src="assets/images/Placement/96.png" alt="Software Tools" class="img-fluid mb-4" style="max-height: 120px;">
+                    <h5 class="fw-bold mb-3">Software Expertise</h5>
+                    <p class="text-white-50">We train on AutoCAD, SolidWorks, CATIA, NX, Creo, Ansys, HyperMesh, MATLAB, and more to make you industry-ready.</p>
+                </div>
+            </div>
 
-                        <!-- Scrollable Company List with Animation -->
-                        <div class="col-md-6 pricing-features">
-                            <h4 class="text-uppercase fw-bold mb-3">Top 100 Design Companies</h4>
-                            <ul id="companyList" class="scroll-list">
-                                <li>Tata Technologies</li>
-                                <li>L&T Technology Services</li>
-                                <li>Mahindra & Mahindra</li>
-                                <li>Ashok Leyland</li>
-                                <li>TVS Motor Company</li>
-                                <li>Force Motors</li>
-                                <li>Bajaj Auto</li>
-                                <li>Hero MotoCorp</li>
-                                <li>Maruti Suzuki</li>
-                                <li>Renault Nissan Technology</li>
-                                <li>Robert Bosch Engineering</li>
-                                <li>Siemens India</li>
-                                <li>General Electric (GE)</li>
-                                <li>Alstom</li>
-                                <li>ABB India</li>
-                                <li>Schneider Electric</li>
-                                <li>Volvo Eicher</li>
-                                <li>Cummins India</li>
-                                <li>John Deere</li>
-                                <li>JCB India</li>
-                                <li>ISRO</li>
-                                <li>DRDO</li>
-                                <li>HAL</li>
-                                <li>Belcan India</li>
-                                <li>Cyient</li>
-                                <li>Quest Global</li>
-                                <li>Capgemini Engineering</li>
-                                <li>KPIT Technologies</li>
-                                <li>WABCO India</li>
-                                <li>Valeo India</li>
-                                <li>ZF India</li>
-                                <li>Faurecia</li>
-                                <li>Godrej Aerospace</li>
-                                <li>Blue Star Ltd</li>
-                                <li>Kirloskar Brothers</li>
-                                <li>Greaves Cotton</li>
-                                <li>Sundaram Clayton</li>
-                                <li>Amara Raja Batteries</li>
-                                <li>Lucas-TVS</li>
-                                <li>TAFE</li>
-                                <li>Triveni Turbine</li>
-                                <li>Thermax India</li>
-                                <li>Kirby Building Systems</li>
-                                <li>Technip Energies</li>
-                                <li>Mecon Ltd</li>
-                                <li>Bharat Forge</li>
-                                <li>HCL Tech</li>
-                                <li>Dassault Systemes</li>
-                                <li>Altair Engineering</li>
-                                <li>Ansys</li>
-                                <li>TCS Engineering</li>
-                                <li>Infosys Engineering</li>
-                                <li>Accenture Industry X</li>
-                                <li>Mercedes Benz R&D</li>
-                                <li>Fiat Chrysler India</li>
-                                <li>Magna Steyr</li>
-                                <li>Continental Automotive</li>
-                                <li>Yamaha Motors R&D</li>
-                                <li>Suzuki R&D India</li>
-                                <li>Honda Cars India</li>
-                                <li>Kia India</li>
-                                <li>Skoda Auto Volkswagen</li>
-                                <li>Ather Energy</li>
-                                <li>Ola Electric</li>
-                                <li>Simple Energy</li>
-                                <li>Bosch Rexroth</li>
-                                <li>Havells India</li>
-                                <li>Philips India</li>
-                                <li>Lumax Industries</li>
-                                <li>Minda Corporation</li>
-                                <li>Varroc Engineering</li>
-                                <li>ReNew Power</li>
-                                <li>BHEL</li>
-                            </ul>
-                        </div>
-
-                    </div>
+            <!-- Box 3 -->
+            <div class="col-md-4">
+                <div class="text-center border-0 shadow-sm bg-dark text-white p-4 h-100 rounded-4">
+                    <img src="assets/images/Placement/98.png" alt="Career Support Services" class="img-fluid mb-4" style="max-height: 120px;">
+                    <h5 class="fw-bold mb-3">Career Support</h5>
+                    <p class="text-white-50">Resume building, interview preparation, mock interviews, job referrals, and continuous support after training completion.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<style>
-    .scroll-list {
-        max-height: 400px;
-        overflow-y: scroll;
-        padding-left: 0;
-        margin: 0;
-        list-style: none;
-    }
 
-    .scroll-list li {
-        font-size: 1rem;
-        padding: 8px 12px;
-        transition: all 0.3s ease;
-        opacity: 0.6;
-    }
+ <!--  Footer Content -->
+<footer class="footer pt-5 pb-5 bg-primary text-white">
+  <div class="container">
 
-    .scroll-list li.active {
-        font-size: 1.2rem;
-        font-weight: bold;
-        opacity: 1;
-        background-color: #f1f5f9;
-        border-radius: 8px;
-        color: blue;
-    }
-</style>
+    <!-- Main Footer Content -->
+    <div class="row justify-content-between mb-5 g-xl-5">
 
-<script>
-    const list = document.getElementById('companyList');
-    list.addEventListener('scroll', () => {
-        const items = list.querySelectorAll('li');
-        const listTop = list.getBoundingClientRect().top + list.offsetHeight / 2;
+      <!-- About & Social -->
+      <div class="col-md-4 mb-5 mb-lg-0">
+        <h3 class="mb-3">About</h3>
+        <hr>
+        <p>Harness our tools to transform ideas into impactful designs. Create with ease and share your vision effortlessly.</p>
+        <!-- Social Media Icons -->
+        <div class="d-flex gap-3 mt-4">
+          <a href="https://www.linkedin.com" target="_blank" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com" target="_blank" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com" target="_blank" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
 
-        items.forEach((item) => {
-            const box = item.getBoundingClientRect();
-            const itemMid = box.top + box.height / 2;
+      <!-- Quick Links -->
+      <div class="col-md-7">
+        <div class="row gy-4">
 
-            if (Math.abs(itemMid - listTop) < 25) {
-                item.classList.add('active');
-            } else {
-                item.classList.remove('active');
-            }
-        });
-    });
-</script>
+          <!-- Company -->
+          <div class="col-6 col-lg-4">
+            <h3 class="mb-3">Company</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#courses" class="text-white text-decoration-none">Courses</a></li>
+              <li><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+              <li><a href="page-terms-conditions.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+              <li><a href="page-privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
 
-            <!-- ======= Footer =======-->
-            <footer class="footer pt-5 pb-5">
-                <div class="container">
-                    <div class="row mb-5 pb-4">
-                        <div class="col-md-7">
-                            <h2 class="fs-5">Join Our Newsletter</h2>
-                            <p>Get the latest updates, expert insights, and exclusive offers—delivered straight to your
-                                inbox.</p>
+          <!-- Accounts -->
+          <div class="col-6 col-lg-4">
+            <h3 class="mb-3">Accounts</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="page-signup.html" class="text-white text-decoration-none">Register</a></li>
+              <li><a href="page-signin.html" class="text-white text-decoration-none">Sign In</a></li>
+            </ul>
+          </div>
 
-                        </div>
-                        <div class="col-md-5">
-                            <form class="d-flex gap-2">
-                                <input class="form-control" type="email" placeholder="Email your email" required="">
-                                <button class="btn btn-primary fs-6" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between mb-5 g-xl-5">
-                        <div class="col-md-4 mb-5 mb-lg-0">
-                            <h3 class="mb-3">About</h3>
-                            <p class="mb-4">Harness our tools to transform ideas into impactful designs. Create with
-                                ease and share your vision
-                                effortlessly.</p>
+          <!-- Contact Info -->
+          <div class="col-12 col-lg-4">
+            <h3 class="mb-3">Contact</h3>
+            <hr>
+            <p class="d-flex mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Jaraka, Jajpur, Odisha,<br>755050, India</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cdtc.edu@gmail.com" target="_blank"
+                  class="d-flex mb-2 text-white text-decoration-none">
+                  <i class="bi bi-envelope-fill me-2"></i>cdtc.edu@gmail.com
+                </a>            
+              <a href="tel:+917735791012" class="d-flex text-white text-decoration-none"><i class="bi bi-telephone-fill me-2"></i>+91 77 357 91012</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                        </div>
-                        <div class="col-md-7">
-                            <div class="row g-2">
-                                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                                    <h3 class="mb-3">Company</h3>
-                                    <ul class="list-unstyled">
+    <!-- Footer Bottom -->
+    <div class="row border-top border-light pt-4">
+      <div class="col-12 text-center">
+        &copy; <script>document.write(new Date().getFullYear());</script> CDTC. All rights reserved.
+      </div>
+    </div>
 
-                                        <li><a href="page-terms-conditions.html">Terms &amp; Conditions</a></li>
-                                        <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                                    <h3 class="mb-3">Accounts</h3>
-                                    <ul class="list-unstyled">
-                                        <li><a href="page-signup.html">Register</a></li>
-                                        <li><a href="page-signin.html">Sign in</a></li>
-
-
-
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
-                                    <h3 class="mb-3">Contact</h3>
-                                    <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i><span>jaraka, jajpur,
-                                            odisha,
-                                            <br> 755050 India</span></p>
-                                    <a class="d-flex mb-3"
-                                        href="https://mail.google.com/mail/?view=cm&fs=1&to=cdtc.edu@gmail.com"><i
-                                            class="bi bi-envelope-fill me-3"></i><span>cdtc.edu@gmail.com
-                                        </span></a>
-                                    <a class="d-flex mb-3" href="tel://+123456789900"><i
-                                            class="bi bi-telephone-fill me-3"></i><span>+91 77 357 91012</span></a><a
-                                        class="d-flex mb-3" href="https://freebootstrap.net"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row credits pt-3">
-                        <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
-            
-                            &copy;
-                            <script>document.write(new Date().getFullYear());</script> CDTC.
-                            All rights reserved.
-                        </div>
-                     
-                    </div>
-                </div>
-            </footer>
-            <!-- End Footer-->
+  </div>
+</footer>
+<!-- End Footer -->
 
         </main>
     </div>
