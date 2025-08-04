@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const backendUrl = 'https://script.google.com/macros/s/AKfycbx_ZH2HdQ-uSCw0IJu-me5mWsmsNg6u0FT1jvnoedA3K7_AkGMVsyJNr-t8HbI2Q7bo/exec';
+  const backendUrl = 'https://script.google.com/macros/s/AKfycbxrTF5J4smgfaFYvsyNlFRF3bQ7JUsRwnYWba-JYMAbKFUabyJBRQIjVWdZo1MorQRqnA/exec';
   const form = document.getElementById('contactForm');
   const successMsg = document.getElementById('successMessage');
   const errorMsg = document.getElementById('errorMessage');
