@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> CDTC Official </title>
-
+     
     <!-- ======= Google Font =======-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
     <!-- End Google Font-->
-
+    
     <!-- ======= Styles =======-->
     <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -19,229 +18,420 @@
     <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendors/aos/aos.css" rel="stylesheet">
     <!-- End Styles-->
-
+    
     <!-- ======= Theme Style =======-->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- End Theme Style-->
 
-
-
+  
+    
     <!-- ======= Apply theme =======-->
     <script>
-        // Apply the theme as early as possible to avoid flicker
-        (function () {
-            const storedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-bs-theme', storedTheme);
-        })();
+      // Apply the theme as early as possible to avoid flicker
+      (function() {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+      })();
     </script>
-</head>
-
-<body>
-
-
+  </head>
+  <body>
+    
+    
     <!-- ======= Site Wrap =======-->
     <div class="site-wrap">
+      
+      
+      <!-- ======= Header =======-->
+<header class="fbs__net-navbar navbar navbar-expand-lg fixed-top bg-white shadow-sm" aria-label="freebootstrap.net navbar">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- Start Logo-->
+    <a class="navbar-brand w-auto" href="index.html">
+      <!-- Uncomment to use a text logo -->
+      <!-- Vertex --> 
+      
+      <!-- 
+      <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder"> 
+      <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder"> 
+      -->
+    </a>
+    <!-- End Logo-->
 
-        <!-- ======= Header =======-->
-        <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
-            <div class="container d-flex align-items-center justify-content-between">
+    <!-- Start offcanvas-->
+    <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+      
+      <div class="offcanvas-header">
+        <div class="offcanvas-header-logo">
+          <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+            <!-- logo dark -->
+            <!-- <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="FreeBootstrap.net image placeholder">  -->
+            <!-- logo light -->
+            <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder">
+          </a>
+        </div>
+        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
+      <div class="offcanvas-body align-items-lg-center">
+        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link scroll-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End offcanvas-->
 
-                <!-- Start Logo-->
-                <a class="navbar-brand w-auto" href="index.html">
-                  
-                   <!-- <img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
-                        alt="FreeBootstrap.net image placeholder">
+    <div class="ms-auto w-auto">
+      <div class="header-social d-flex align-items-center gap-1">
+        <a class="btn btn-primary py-2" href="#">Buy Now</a>
+        <a class="btn btn-primary py-2" href="./assets/pages/quotation.html">Quotation</a>
 
-                  <img class="logo light img-fluid" src="assets/images/logo-light.svg"
-                        alt="FreeBootstrap.net image placeholder">
-                </a> -->
-                <!-- End Logo-->
+        <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+          <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="21" x2="3" y1="6" y2="6"></line>
+            <line x1="15" x2="3" y1="12" y2="12"></line>
+            <line x1="17" x2="3" y1="18" y2="18"></line>
+          </svg>
+          <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Header -->
 
-                <!-- Start offcanvas-->
-                <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
-                    aria-labelledby="fbs__net-navbarsLabel">
+      
+      <!-- ======= Main =======-->
+      <main>
+        
+        
+<!-- ======= Hero with Video Background and Top Gradient Overlay ======= -->
+<section id="hero-video" style="position: relative; height: 100vh; overflow: hidden;">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; background-color: #000; z-index: -1;">
+    <source src="assets/video/clay_4a485c49f2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
+  <!-- Gradient Overlay: Black and Airbus Blue fade down -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 51, 141, 0.3) 30%, rgba(0, 51, 141, 0) 60%);
+    z-index: 0;">
+  </div>
 
-                    <div class="offcanvas-header">
-                        <div class="offcanvas-header-logo">
+  <!-- Hero Content: Centered horizontally, aligned to bottom -->
+  <div class="container h-100 d-flex flex-column justify-content-end align-items-center text-center text-white" style="position: relative; z-index: 1; padding-bottom: 60px;">
+    <div>
+      <h1 class="display-4 fw-bold mb-4" style="color: #ffffff; text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;">
+        Design Beyond Engineering
+      </h1>
 
-                            <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
-
-
-                             <img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
-                                    alt="FreeBootstrap.net image placeholder">
-
-                               <img class="logo light img-fluid" src="assets/images/logo-light.svg"
-                                    alt="FreeBootstrap.net image placeholder"></a>
-
-                        </div>
-                        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-
-                <div class="offcanvas-body align-items-lg-center">
-                    <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="course.html">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="certification.html">Certification</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="placement.html">Placement</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="testimonial.html">Testimonial</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="faqs.html">FAQs</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                </div>
-                <!-- End offcanvas-->
-
-                <div class="ms-auto w-auto">
-
-
-                    <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2"
-                            href="#">Buy Now</a>
-                        <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2"
-                                href="./assets/pages/quotation.html">Quotation</a>
-
-                            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
-                                data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars"
-                                aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
-                                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="21" x2="3" y1="6" y2="6"></line>
-                                    <line x1="15" x2="3" y1="12" y2="12"></line>
-                                    <line x1="17" x2="3" y1="18" y2="18"></line>
-                                </svg>
-                                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 6 6 18"></path>
-                                    <path d="m6 6 12 12"></path>
-                                </svg>
-                            </button>
-
-                        </div>
-
-                    </div>
-                </div>
-        </header>
-        <div style="height: 50px;"></div>
+      <a href="#contact" class="btn btn-light me-2">Get Started</a>
+      <a href="#about" class="btn btn-outline-light">Learn More</a>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
         <!-- End Header-->
 
         <!-- ======= Main =======-->
         <main>
 
-    <!-- ======= About Section =======-->
-    <section id="about" class="pt-5 pb-5 bg-light mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-                    <img src="./assets//AdvantagesofSolidworksOverAutoca-1.jpeg" alt="About CDTC" class="img-fluid rounded shadow-sm">
-                </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <h2 class="mb-4">About CDTC</h2>
-                    <p>
-                        CDTC (CAD Design Training Center) is committed to delivering top-notch education and
-                        practical training
-                        to empower individuals in building strong technical and professional foundations. With an emphasis
-                        on real-world
-                        skills, we prepare our learners for industry demands through certified courses, workshops, and
-                        placement assistance.
-                    </p>
-                    <p>
-                        Our team of expert instructors, industry partnerships, and modern teaching methodologies ensure that
-                        students not
-                        only learn but also thrive in competitive job markets. Whether you are a beginner or a professional
-                        looking to upskill,
-                        CDTC is your trusted partner in growth and career advancement.
-                    </p>
-                    <a href="course.html" class="btn btn-primary mt-3">Explore Courses</a>
-                </div>
+<!-- ======= About CDTC Section ======= -->
+<section class="about__v4 section bg-white py-5" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left: Image + Mission/Vision -->
+      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+        <div class="img-wrap position-relative">
+          <img src="assets/images/videoframe_4240.png" alt="CAD Training" class="img-fluid rounded-4 shadow-sm">
+
+          <!-- Mission and Vision -->
+          <div class="d-flex flex-column gap-3 mt-4">
+            <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light border-start border-4 border-primary">
+              <i class="bi bi-bullseye fs-4 text-primary"></i>
+              <div>
+                <h5 class="fw-bold text-uppercase mb-1">Our Mission</h5>
+                <p class="mb-0 small">Empowering students with industry-standard CAD skills through focused, practical training.</p>
+              </div>
             </div>
+            <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light border-start border-4 border-primary">
+              <i class="bi bi-eye fs-4 text-primary"></i>
+              <div>
+                <h5 class="fw-bold text-uppercase mb-1">Our Vision</h5>
+                <p class="mb-0 small">To become the most trusted name in CAD training across technical institutions nationwide.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Right: About Content -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="text-uppercase text-primary fw-semibold fs-6 mb-2 d-block">About CDTC</span>
+        <h2 class="fw-bold mb-4">Master 5 CAD Tools in Just <span class="text-primary">4 Days</span></h2>
+        <p class="mb-3">CDTC (Center for Design, Technology & Creativity) offers immersive CAD/CAM/CAE workshops tailored for engineering and diploma students. Our programs simulate real-world design workflows to build practical, job-ready skills.</p>
+
+        <div class="row gy-3">
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i><span>AutoCAD – 2D Drafting</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i><span>SolidWorks – 3D Modeling</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i><span>CATIA – Surface Design</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i><span>Siemens NX – Assemblies</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-primary"></i><span>Creo Parametric – Industrial Parts</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-award-fill text-primary"></i><span>Certified Course with Placement Help</span>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <p class="small text-muted">* Training timeline is customizable based on institutional needs. Reach out for campus-specific sessions or semester-aligned formats.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-    <!-- ======= End About Section =======-->
 
+<!-- ======= Full-Screen Classroom Image Section ======= -->
+<section class="p-0 m-0">
+  <div class="d-flex align-items-center justify-content-center bg-black w-100 vh-100 text-white px-3">
+
+    <!-- Left Text -->
+    <div class="d-none d-md-block me-4 text-end" style="max-width: 25%;">
+      <h5 class="fw-bold">Industry-Ready Training</h5>
+      <p class="fs-6">Our programs are crafted by top engineers and tailored to match real-world requirements.</p>
+    </div>
+
+    <!-- Center Image -->
+    <div class="text-center">
+      <img src="assets/images/about/cdtc_classroom.png" 
+           alt="CDTC Training Session" 
+           class="img-fluid" 
+           style="max-width: 90vw; max-height: 80vh;">
+    </div>
+
+    <!-- Right Text -->
+    <div class="d-none d-md-block ms-4 text-start" style="max-width: 25%;">
+      <h5 class="fw-bold">Transforming Campuses</h5>
+      <p class="fs-6">40+ institutions trust CDTC to deliver practical CAD skills with placement support.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ======= Trusted by Industry Leaders Section ======= -->
+<section class="bg-white py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="text-uppercase text-primary fw-semibold fs-6">Trusted By Industry Leaders</span>
+      <h2 class="fw-bold">Our Valuable Collaborators</h2>
+    </div>
+  </div>
+
+  <!-- Marquee Style -->
+  <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 20px 0;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-marquee 30s linear infinite;
+    }
+
+    .marquee-track img {
+      height: 50px;
+      margin: 0 30px;
+      object-fit: contain;
+    }
+
+    @keyframes scroll-marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <!-- Logos -->
+      <img src="assets/images/logo/logo-uber__black.svg" alt="Uber">
+      <img src="assets/images/logo/logo-air-bnb__black.svg" alt="Airbnb">
+      <img src="assets/images/logo/logo-american-apparel.svg" alt="American Apparel">
+      <img src="assets/images/logo/logo-apple.svg" alt="Apple">
+      <img src="assets/images/logo/logo-google__black.svg" alt="Google">
+      <img src="assets/images/logo/logo-ibm.svg" alt="IBM">
+      <img src="assets/images/logo/logo-invision.svg" alt="InVision">
+      <img src="assets/images/logo/logo-microsoft.svg" alt="Microsoft">
+      <img src="assets/images/logo/logo-youtube.svg" alt="YouTube">
+      <img src="assets/images/logo/logo-netflix.svg" alt="Netflix">
+      <!-- Duplicate set for loop effect -->
+      <img src="assets/images/logo/logo-uber__black.svg" alt="Uber">
+      <img src="assets/images/logo/logo-air-bnb__black.svg" alt="Airbnb">
+      <img src="assets/images/logo/logo-american-apparel.svg" alt="American Apparel">
+      <img src="assets/images/logo/logo-apple.svg" alt="Apple">
+      <img src="assets/images/logo/logo-google__black.svg" alt="Google">
+      <img src="assets/images/logo/logo-ibm.svg" alt="IBM">
+      <img src="assets/images/logo/logo-invision.svg" alt="InVision">
+      <img src="assets/images/logo/logo-microsoft.svg" alt="Microsoft">
+      <img src="assets/images/logo/logo-youtube.svg" alt="YouTube">
+      <img src="assets/images/logo/logo-netflix.svg" alt="Netflix">
+    </div>
+  </div>
+</section>
+
+<!-- ======= About & Journey Timeline Section ======= -->
+  
+</section>
+
+<!-- ======= Custom Styling ======= -->
+<style>
+  #timeline {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .black-background-wrapper {
+    background-color: #000;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .image-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .image-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+
+  #timeline h2 {
+    margin-bottom: 10px;
+  }
+</style>
     
-            <!-- ======= Footer =======-->
-            <footer class="footer pt-5 pb-5">
-                <div class="container">
-                    <div class="row mb-5 pb-4">
-                        <div class="col-md-7">
-                            <h2 class="fs-5">Join Our Newsletter</h2>
-                            <p>Get the latest updates, expert insights, and exclusive offers—delivered straight to your
-                                inbox.</p>
-
-                        </div>
-                        <div class="col-md-5">
-                            <form class="d-flex gap-2">
-                                <input class="form-control" type="email" placeholder="Email your email" required="">
-                                <button class="btn btn-primary fs-6" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between mb-5 g-xl-5">
-                        <div class="col-md-4 mb-5 mb-lg-0">
-                            <h3 class="mb-3">About</h3>
-                            <p class="mb-4">Harness our tools to transform ideas into impactful designs. Create with
-                                ease and share your vision
-                                effortlessly.</p>
-
-                        </div>
-                        <div class="col-md-7">
-                            <div class="row g-2">
-                                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                                    <h3 class="mb-3">Company</h3>
-                                    <ul class="list-unstyled">
-
-                                        <li><a href="page-terms-conditions.html">Terms &amp; Conditions</a></li>
-                                        <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                                    <h3 class="mb-3">Accounts</h3>
-                                    <ul class="list-unstyled">
-                                        <li><a href="page-signup.html">Register</a></li>
-                                        <li><a href="page-signin.html">Sign in</a></li>
+            <style>
+  .footer h3 {
+    font-size: 1.5rem; /* Adjust size if needed */
+    font-weight: 1000;    /* Bold */
+  }
+</style>
 
 
+<!--  Footer Content -->
+<footer class="footer pt-5 pb-5 bg-primary text-white">
+  <div class="container">
 
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
-                                    <h3 class="mb-3">Contact</h3>
-                                    <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i><span>jaraka, jajpur,
-                                            odisha,
-                                            <br> 755050 India</span></p>
-                                    <a class="d-flex mb-3"
-                                        href="https://mail.google.com/mail/?view=cm&fs=1&to=cdtc.edu@gmail.com"><i
-                                            class="bi bi-envelope-fill me-3"></i><span>cdtc.edu@gmail.com
-                                        </span></a>
-                                    <a class="d-flex mb-3" href="tel://+123456789900"><i
-                                            class="bi bi-telephone-fill me-3"></i><span>+91 77 357 91012</span></a><a
-                                        class="d-flex mb-3" href="https://freebootstrap.net"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row credits pt-3">
-                        <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
-            
-                            &copy;
-                            <script>document.write(new Date().getFullYear());</script> CDTC.
-                            All rights reserved.
-                        </div>
-                     
-                    </div>
-                </div>
-            </footer>
-            <!-- End Footer-->
+    <!-- Main Footer Content -->
+    <div class="row justify-content-between mb-5 g-xl-5">
+
+      <!-- About & Social -->
+      <div class="col-md-4 mb-5 mb-lg-0">
+        <h3 class="mb-3">About</h3>
+        <hr>
+        <p>Harness our tools to transform ideas into impactful designs. Create with ease and share your vision effortlessly.</p>
+        <!-- Social Media Icons -->
+        <div class="d-flex gap-3 mt-4">
+          <a href="https://www.linkedin.com" target="_blank" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com" target="_blank" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com" target="_blank" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-7">
+        <div class="row gy-4">
+
+          <!-- Company -->
+          <div class="col-6 col-lg-4">
+            <h3 class="mb-3">Company</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#courses" class="text-white text-decoration-none">Courses</a></li>
+              <li><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+              <li><a href="page-terms-conditions.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+              <li><a href="page-privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Accounts -->
+          <div class="col-6 col-lg-4">
+            <h3 class="mb-3">Accounts</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="page-signup.html" class="text-white text-decoration-none">Register</a></li>
+              <li><a href="page-signin.html" class="text-white text-decoration-none">Sign In</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-12 col-lg-4">
+            <h3 class="mb-3">Contact</h3>
+            <hr>
+            <p class="d-flex mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Jaraka, Jajpur, Odisha,<br>755050, India</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cdtc.edu@gmail.com" target="_blank"
+                  class="d-flex mb-2 text-white text-decoration-none">
+                  <i class="bi bi-envelope-fill me-2"></i>cdtc.edu@gmail.com
+                </a>            
+              <a href="tel:+917735791012" class="d-flex text-white text-decoration-none"><i class="bi bi-telephone-fill me-2"></i>+91 77 357 91012</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="row border-top border-light pt-4">
+      <div class="col-12 text-center">
+        &copy; <script>document.write(new Date().getFullYear());</script> CDTC. All rights reserved.
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- End Footer -->
 
         </main>
     </div>
