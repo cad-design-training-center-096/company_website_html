@@ -469,9 +469,9 @@ body {
     <!-- END CONTENT SECTION -->
   </div>
 
-  <script>
-    const endPoint = 'https://script.google.com/macros/s/AKfycbx_ZH2HdQ-uSCw0IJu-me5mWsmsNg6u0FT1jvnoedA3K7_AkGMVsyJNr-t8HbI2Q7bo/exec';
-    const container = document.getElementById('container');
+<script>
+ const endPoint =  "https://script.google.com/macros/s/AKfycbxrTF5J4smgfaFYvsyNlFRF3bQ7JUsRwnYWba-JYMAbKFUabyJBRQIjVWdZo1MorQRqnA/exec"
+  const container = document.getElementById('container');
 
 // Toggle between sign in and sign up views
 function toggle() {
@@ -503,8 +503,8 @@ async function signIn() {
   const email = signInForm.querySelector('input[placeholder="Username"]').value.trim();
   const password = signInForm.querySelector('input[placeholder="Password"]').value.trim();
 
-   const signUpBtn = signInForm.querySelector('button');
-  const spinner = signUpBtn.querySelector('.spinner-border');
+  const signInBtn = signInForm.querySelector('button');
+  const spinner = signInBtn.querySelector('.spinner-border');
 
   if (!email || !password) {
     alert('Please enter both username and password.');
@@ -513,7 +513,7 @@ async function signIn() {
 
   // Show spinner and disable button
   spinner.style.display = 'inline-block';
-  signUpBtn.disabled = true;
+  signInBtn.disabled = true;
 
   const formData = new URLSearchParams();
   formData.append('Action', 'login');
@@ -542,7 +542,9 @@ async function signIn() {
 
     alert('Login successful!');
 
-
+    setTimeout(() => {
+      window.location.href ="index.html";;
+    }, 3000);
 
   } catch (err) {
     alert('Network error during login.');
@@ -562,8 +564,8 @@ async function signUp() {
   const password = signUpForm.querySelector('input[placeholder="Password"]').value.trim();
   const confirmPassword = signUpForm.querySelector('input[placeholder="Confirm password"]').value.trim();
 
-  const signInBtn = signInForm.querySelector('button');
-  const spinner = signInBtn.querySelector('.spinner-border');
+  const signUpBtn = signUpForm.querySelector('button');
+  const spinner = signUpBtn.querySelector('.spinner-border');
 
   if (!username || !email || !password || !confirmPassword) {
     alert('Please fill all fields.');
@@ -587,11 +589,11 @@ async function signUp() {
 
     // Show spinner and disable button
     spinner.style.display = 'inline-block';
-    signInBtn.disabled = true;
+    signUpBtn.disabled = true;
 
     const formData = new URLSearchParams();
     formData.append('Action', 'registration');
-    formData.append('Type', 'college');
+    formData.append('UserName', username);
     formData.append('Email', email);
     formData.append('Password', password);
 
@@ -626,7 +628,7 @@ async function signUp() {
    finally {
     // Hide spinner and enable button no matter success or failure
     spinner.style.display = 'none';
-    signInBtn.disabled = false;
+    signUpBtn.disabled = false;
   }
 }
 
@@ -639,7 +641,9 @@ function validateEmail(email) {
 
 
   </script>
+  
 
 </body>
+
 
 </html>
