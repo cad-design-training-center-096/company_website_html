@@ -117,7 +117,7 @@
 <!-- ======= Hero with Video Background and Top Gradient Overlay ======= -->
 <section id="hero-video" style="position: relative; height: 100vh; overflow: hidden;">
   <!-- Background Video -->
-  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: -1;">
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; background-color: #000; z-index: -1;">
     <source src="assets/video/clay_4a485c49f2.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -134,13 +134,22 @@
   <!-- Hero Content: Centered horizontally, aligned to bottom -->
   <div class="container h-100 d-flex flex-column justify-content-end align-items-center text-center text-white" style="position: relative; z-index: 1; padding-bottom: 60px;">
     <div>
-      <h1 class="display-4 fw-bold mb-4" style="color: #ffffff;">Design Beyond Engineering</h1>
+      <h1 class="display-4 fw-bold mb-4" style="color: #ffffff; text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;">
+        Design Beyond Engineering
+      </h1>
+
       <a href="#contact" class="btn btn-light me-2">Get Started</a>
       <a href="#about" class="btn btn-outline-light">Learn More</a>
     </div>
   </div>
 </section>
 <!-- End Hero -->
+
+
 
         
 <!-- ======= About & Journey Timeline Section ======= -->
@@ -398,39 +407,38 @@
     <!-- Section Title & Description -->
     <h2 class="mb-4 fw-bold text-black">Why Choose Us</h2>
 
-    <!-- Centered One-Line Text -->
-<div class="one-line-text-wrapper">
-  <p class="one-line-text">
-    Our <span class="fw-semibold text-black">4-day CAD training program</span> prepares students for real-world scenarios with
-    <strong class="text-primary">industry-relevant tools</strong> and <strong class="text-primary">hands-on practice</strong>.
-  </p>
-</div>
+    <!-- Centered Text (NO SCROLLBAR) -->
+    <div class="one-line-text-wrapper">
+      <p class="one-line-text">
+        Our <span class="fw-semibold text-black">4-day CAD training program</span> prepares students for real-world scenarios with
+        <strong class="text-primary">industry-relevant tools</strong> and <strong class="text-primary">hands-on practice</strong>.
+      </p>
+    </div>
 
-<!-- Custom CSS -->
-<style>
-  .one-line-text-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 10px 0;
-  }
+    <!-- Custom CSS -->
+    <style>
+      .one-line-text-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        text-align: center;
+      }
 
-  .one-line-text {
-    font-size: 1rem;
-    margin: 0;
-    white-space: nowrap;
-  }
+      .one-line-text {
+        font-size: 1rem;
+        margin: 0;
+        white-space: normal; /* allow wrapping */
+        word-break: break-word;
+        max-width: 800px; /* optional */
+      }
 
-  @media (max-width: 576px) {
-    .one-line-text {
-      font-size: 0.95rem;
-    }
-  }
-</style>
-
-
+      @media (max-width: 576px) {
+        .one-line-text {
+          font-size: 0.95rem;
+        }
+      }
+    </style>
   </div>
 
   <!-- Full-width black background with image -->
@@ -467,6 +475,7 @@
     display: block;
   }
 </style>
+
 
 
 
